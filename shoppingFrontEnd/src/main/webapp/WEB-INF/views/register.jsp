@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>register page</title>
 </head>
 <body>
-this is the registration page
+this is register page
 </body>
 </html>
