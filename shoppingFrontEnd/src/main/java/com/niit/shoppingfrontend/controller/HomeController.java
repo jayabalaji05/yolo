@@ -31,14 +31,14 @@
 		public String login( Model model)
 		{
 		model.addAttribute("userClickedLogin","true");	
-		return "index";
+		return "login";
 		}
 		
 		@RequestMapping("/register")
 		public String register( Model model)
 		{
 			model.addAttribute("userClickedRegister","true");
-			return "index";
+			return "register";
 		}
 	
 	}

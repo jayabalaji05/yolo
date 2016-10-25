@@ -4,11 +4,11 @@
 %>
 <html>
 <body>
-<h2><center>Shopping cart</center></h2>
-<hr>
-new user <a href="login" > login here </a><br>
-Register <a href="register"> here</a>
-<hr>
+<jsp:include page="header.jsp"></jsp:include>
+<br>
+<br>
+<br>
+<h3><center>Welcome to SuggestionCART</center></h3>
 <c:if test="${userClickedLogin}">
 <jsp:include page="login.jsp"></jsp:include><br>
 </c:if>
