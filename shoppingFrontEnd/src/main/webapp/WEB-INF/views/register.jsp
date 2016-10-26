@@ -4,6 +4,7 @@
     prefix="c"
     uri="http://java.sun.com/jsp/jstl/core" 
 %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -13,22 +14,22 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
+<style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 80%;
       margin: auto;
   }
   </style>
-</head>
-<body>
+ </head>
+ <body>
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">SuggestionCART</a>
+      <a class="navbar-brand" href="index">SuggestionCART</a>
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="#">Home<span class="glyphicon glyphicon-home"></span> </a></li>
+      <li><a href="/">Home<span class="glyphicon glyphicon-home"></span> </a></li>
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="#">Page 1-1</a></li>
@@ -39,17 +40,18 @@
       <li><a href="#">Contact</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <c:if test="${empty SuccessMessage}">
+    <c:if test="${empty SuccessMessage}">
       <li class="active"><a href="register">Signup <span class="glyphicon glyphicon-user"></span></a></li>
       <li><a href="login">Login <span class="glyphicon glyphicon-log-in"></span></a></li>
       </c:if>
       <c:if test="${not empty SuccessMessage}">
        <li><a href="#">My Cart<span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-       <li><a href="home">Log out<span class="glyphicon glyphicon-log-out"></span></a></li>
+       <li><a href="/">Logout<span class="glyphicon glyphicon-log-out"></span></a></li>
        </c:if>
     </ul>
   </div>
 </nav>
+<form:form action="registration">
 <table style="text-align:left;">
 <tr>
 	<td><label for="firstname">Firstname</label></td>
@@ -123,8 +125,11 @@
 	<td>:</td>
 	<td><input type="text" id="pincode" name=""></td>
 </tr>
+<tr>
+	<td><input type="reset" name="Reset">
+	<input type="submit" value="Submit"></td>
+</tr>
 </table>
-	<br><br>
-<a herf="registeration"><input type="submit" value="submit"></a>	
+</form:form>
 </body>
 </html>

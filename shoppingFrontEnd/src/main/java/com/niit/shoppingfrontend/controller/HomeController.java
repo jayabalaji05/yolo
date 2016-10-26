@@ -40,5 +40,9 @@
 			model.addAttribute("userClickedRegister","true");
 			return "register";
 		}
-	
+		@RequestMapping("/registration")
+		public String Registeration()
+		{
+			return "registration";
+		}
 	}
