@@ -58,11 +58,13 @@
 <form action="validate" method="POST">
 <table style="text-align:left;">
 <tr>
-<td><label for="userID">User ID:</label></td>
+<td><label for="userID">User ID</label></td>
+<td>:</td>
 <td><input type="text" name="userID"></td>
 </tr>
 <tr>
-<td><label for="password">Password:</label></td>
+<td><label for="password">Password</label></td>
+<td>:</td>
 <td><input type="password" name="password"></td>
 </tr>
 <tr>

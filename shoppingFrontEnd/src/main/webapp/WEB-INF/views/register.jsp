@@ -14,13 +14,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style>
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 80%;
-      margin: auto;
-  }
-  </style>
  </head>
  <body>
 <nav class="navbar navbar-default">
@@ -60,11 +53,6 @@
 	</td>
 </tr>
 <tr>
-	<td><label for="middlename">Middlename</label></td>
-	<td>:</td>
-	<td><input type="text" id="Middlename" placeholder="middlename"></td>
-</tr>
-<tr>
 	<td><label for="lastname">Lastname</label></td>
 	<td>:</td>
 	<td><input type="text" id="lastname" placeholder="lastname"></td>
@@ -85,19 +73,9 @@
 	<td><input type="password" id="password" required></td>
 </tr>
 <tr>
-	<td><label for="confirm_password">Confirm password</label></td>
+	<td><label for="address">Address</label></td>
 	<td>:</td>
-	<td><input type="password" id="confirm_password" required></td>
-</tr>
-<tr>
-	<td><label for="address1">Address1</label></td>
-	<td>:</td>
-	<td><input type="text" id="address1" name=""></td>
-</tr>
-<tr>
-	<td><label for="address2">Address2<label></td>
-	<td>:</td>
-	<td><input type="text" id="address2" name=""></td>
+	<td><input type="text" id="address" name=""></td>
 </tr>
 <tr>
 	<td><label for="district">District</label></td>

@@ -29,7 +29,7 @@
       <a class="navbar-brand" href="index">SuggestionCART</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="/">Home<span class="glyphicon glyphicon-home"></span> </a></li>
+      <li class="active"><a href="#">Home<span class="glyphicon glyphicon-home"></span> </a></li>
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="#">Page 1-1</a></li>
@@ -46,7 +46,7 @@
       </c:if>
       <c:if test="${not empty SuccessMessage}">
        <li><a href="#">My Cart<span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-       <li><a href="/">Logout<span class="glyphicon glyphicon-log-out"></span></a></li>
+       <li><a href="login">Logout<span class="glyphicon glyphicon-log-out"></span></a></li>
        </c:if>
     </ul>
   </div>
