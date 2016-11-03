@@ -10,10 +10,21 @@
 		@RequestMapping("/")
 		public String gotohome()
 		{
-			return "index";
+			return "home";
+					
+		}
+		@RequestMapping("/home")
+		public String home()
+		{
+			return "home";
 		}
 		
-		@RequestMapping("/validate")
+		@RequestMapping("/home1")
+		public String logging()
+		{
+			return "welcome";
+		}
+		@RequestMapping("/welcome")
 		public String validate(@RequestParam("userID")String userID,@RequestParam("password") String pwd,Model model)
 		{
 			if(userID.equals("niit") && pwd.equals("niit"))
@@ -26,22 +37,14 @@
 			}
 			return "index";
 		}
-		
 		@RequestMapping("/login")
 		public String login( Model model)
 		{
 		model.addAttribute("userClickedLogin","true");	
 		return "login";
 		}
-		
-		@RequestMapping("/register")
-		public String register( Model model)
-		{
-			model.addAttribute("userClickedRegister","true");
-			return "register";
-		}
 		@RequestMapping("/registration")
-		public String Registeration()
+		public String registeration()
 		{
 			return "registration";
 		}

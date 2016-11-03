@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Entity
 @Table
-public class Category {
+public class Supplier {
 	@Id
 private String id;
 	@Column(name="name")
