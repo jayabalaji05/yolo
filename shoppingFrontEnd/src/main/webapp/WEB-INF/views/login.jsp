@@ -404,7 +404,7 @@ input::-webkit-input-placeholder {
                                 <span id="text-register-msg">Register an account.</span>
                             </div>
 		    				<input id="register_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
-                            <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                            <input id="register_email" class="form-control" type="email" placeholder="E-Mail" required>
                             <input id="register_password" class="form-control" type="password" placeholder="Password" required>
             			</div>
 		    		    <div class="modal-footer">

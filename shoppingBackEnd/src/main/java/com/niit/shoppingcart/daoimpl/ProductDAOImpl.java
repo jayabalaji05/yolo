@@ -6,26 +6,22 @@ import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.niit.shoppingbackend.dao.CategoryDAO;
-import com.niit.shoppingbackend.model.Category;
+import com.niit.shoppingbackend.dao.ProductDAO;
+import com.niit.shoppingbackend.model.Product;
 
-@Repository("categoryDAO")
-public class CategoryDAOImpl implements CategoryDAO {
-
+public class ProductDAOImpl implements ProductDAO {
+	
 	@Autowired
 	SessionFactory sessionFactory;
 	
-	public CategoryDAOImpl(SessionFactory sessionFactory)
+	public ProductDAOImpl(SessionFactory sessionFactory)
 	{
 	 this.sessionFactory=sessionFactory;
 	}
-	
-	@Transactional
-	public boolean save(Category category) {
-		
+@Transactional
+	public boolean save(Product category) {
 		try {
 			sessionFactory.getCurrentSession().save(category);
 			return true;
@@ -33,12 +29,9 @@ public class CategoryDAOImpl implements CategoryDAO {
 			e.printStackTrace();
 			return false;
 		}
-		
 	}
-
-	@Transactional
-	public boolean update(Category category) {
-		
+@Transactional
+	public boolean update(Product category) {
 		try {
 			sessionFactory.getCurrentSession().update(category);
 			return true;
@@ -47,37 +40,25 @@ public class CategoryDAOImpl implements CategoryDAO {
 			return false;
 		}
 	}
-
-	@Transactional
-	public boolean delete(Category category) {
+@Transactional
+	public boolean delete(Product category) {
 		try {
-				if(get(category.getId())==null)
-				{
-					return false;
-				}
 			sessionFactory.getCurrentSession().delete(category);
 			return true;
 		} catch (HibernateException e) {
 			e.printStackTrace();
 			return false;
 		}
-		
 	}
-
-	@Transactional
-	public Category get(String id) {
-		return(Category) sessionFactory.openSession().get(Category.class,id);
-		
-
-		
+@Transactional
+	public Product get(String id) {
+		return(Product) sessionFactory.getCurrentSession().get(Product.class,id);
 	}
-
-	@Transactional
-	public List<Category> list() {
-		String hql="from Category";
+@Transactional
+	public List<Product> list() {
+		String hql="from Product";
 		Query query= sessionFactory.getCurrentSession().createQuery(hql);
 	    return  query.list();
 	}
-	
 
 }

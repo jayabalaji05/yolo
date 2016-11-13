@@ -13,7 +13,7 @@
     background: #fff url("../images/footer/footer-bg.png") repeat scroll left top;
 	padding-top: 40px;
 	padding-right: 0;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	padding-left: 0;/*	border-top-width: 4px;
 	border-top-style: solid;
 	border-top-color: #003;*/
@@ -126,7 +126,7 @@
 
 
 .footer-bottom {
-    background-color: #15224f;
+    background-color: #428bca;
     min-height: 30px;
     width: 100%;
 }
@@ -146,9 +146,95 @@
 .design a {
     color: #fff;
 }
+.sponsor{
+	background-color: #fcfcfc;
+	border-top: 1px solid rgba(238, 238, 238, 0.3);
+}
+.sponsor img{
+	height: 60px;
+	margin: 0 5px;
+	border-radius: 5px
+}
+
+.sponsor .list-inline{
+	margin-bottom: 0;
+}
+
+.sponsor .carousel{
+	position: relative;
+}
+
+.sponsor .control-left .fa{
+	background-color: #f4f4f4; 
+	padding: 6px 10px; 
+	border-radius: 4px;
+	color: #999;
+	position: absolute; 
+	top: 15px;
+	left: 0;
+}
+
+.sponsor .control-left .fa:hover,
+.sponsor .control-right .fa:hover{
+	background-color: #63b5b2;
+	color: #fff;
+}
+.sponsor .control-right .fa{
+	background-color: #f4f4f4; 
+	padding: 6px 10px; 
+	border-radius: 4px;
+	color: #999;
+	position: absolute; 
+	top: 15px;
+	right: 0;
+}
 </style>
 <body>
-<footer class="footer1">
+<section class="sponsor">
+			<div class="container">			
+				<div id="sponsor" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<div class="row">	
+								<div class="col-sm-12">
+									<ul class="list-inline text-center">
+										<li><img class="" src="images/1.gif" /></li>
+										<li><img class="" src="images/2.png" /></li>
+										<li><img class="" src="images/3.png" /></li>
+										<li><img class="" src="images/4.png" /></li>
+										<li><img class="" src="images/5.png" /></li>
+										<li><img class="" src="images/6.png" /></li>
+										<li><img class="" src="images/7.png" /></li>
+										<li><img class="" src="images/8.png" /></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="row">	
+								<div class="col-sm-12">
+									<ul class="list-inline text-center">
+										<li><img class="" src="images/1.gif" /></li>
+										<li><img class="" src="images/2.png" /></li>
+										<li><img class="" src="images/3.png" /></li>
+										<li><img class="" src="images/4.png" /></li>
+										<li><img class="" src="images/5.png" /></li>
+										<li><img class="" src="images/6.png" /></li>
+										<li><img class="" src="images/7.png" /></li>
+										<li><img class="" src="images/8.png" /></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Controls -->
+				<a class="control-left" href="#sponsor" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+				<a class="control-right" href="#sponsor" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
+				</div>			
+			</div>
+		</section>	
+<br><br><br><br><br>
+<footer class="footer1" align="bottom">
 <div class="container">
 
 <div class="row"><!-- row -->
@@ -280,8 +366,8 @@
 </div>
 </footer>
 <!--header-->
-
-<div class="footer-bottom">
+<footer align="bottom">
+<div class="footer-bottom" >
 
 	<div class="container">
 
@@ -312,5 +398,6 @@
 	</div>
 
 </div>
+</footer>
 </body>
 </html>
