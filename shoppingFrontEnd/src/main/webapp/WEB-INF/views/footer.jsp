@@ -233,7 +233,7 @@
 				</div>			
 			</div>
 		</section>	
-<br><br><br><br><br>
+<br><br><br><br>
 <footer class="footer1" align="bottom">
 <div class="container">
 

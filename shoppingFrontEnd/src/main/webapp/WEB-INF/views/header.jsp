@@ -725,7 +725,7 @@ body {
 						<li class="col-sm-3">
 							<ul>
 								<li class="dropdown-header">Features</li>
-								<li><a href="#">Auto Carousel</a></li>
+								<li><a href="products">Auto Carousel</a></li>
 								<li><a href="#">Carousel Control</a></li>
 								<li><a href="#">Left & Right Navigation</a></li>
 								<li><a href="#">Four Columns Grid</a></li>

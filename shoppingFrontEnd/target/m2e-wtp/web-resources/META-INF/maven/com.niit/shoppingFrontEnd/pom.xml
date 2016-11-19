@@ -5,9 +5,14 @@
   <artifactId>shoppingFrontEnd</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>shoppingFrontEnd Maven Webapp</name>
+  <name>shoppingFrontEnd</name>
   <url>http://maven.apache.org</url>
   <dependencies>
+  <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-orm</artifactId>
+    <version>4.3.3.RELEASE</version>
+</dependency>
   <dependency>
     <groupId>junit</groupId>
     <artifactId>junit</artifactId>

@@ -13,9 +13,9 @@ import org.springframework.stereotype.Component;
 public class Category {
 	@Id
 private String id;
-	@Column(name="name")
+	@Column
 private String name;
-	@Column(name="description")
+	@Column
 private String description;
 public String getId() {
 	return id;

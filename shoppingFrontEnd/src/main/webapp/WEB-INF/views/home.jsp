@@ -17,7 +17,7 @@
 	      $('.carousel').carousel({interval: 7000});
 	    });
   </script>
-<title>Home Page</title>
+<title>SuggestionCART</title>
 </head>
 <style>
 #content{
@@ -165,7 +165,7 @@ html {
 
 body {
   min-height: 3000px;
-  padding-top: 70px;
+  padding-top: 23px;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -535,8 +535,8 @@ section.home .intro{
 											<a class="btn btn-default">Shop Now</a>
 										</div>
 									</div>
-									<div class="col-sm-5"><br><br><br><br>
-										<img class="img-responsive" src="http://buzz2fone.com/wp-content/uploads/Mobile-phone.jpg" height="742" alt="" />
+									<div class="col-sm-5"><br>
+										<img class="img-responsive" src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\desk-slide.png" height="742" alt="" />
 									</div>	
 								</div>	
 							</div>	
@@ -552,8 +552,8 @@ section.home .intro{
 											<a class="btn btn-default">Shop Now</a>
 										</div>
 									</div>
-									<div class="col-sm-5"><br><br><br><br>
-										<img class="img-responsive" src="http://buzz2fone.com/wp-content/uploads/Mobile-phone.jpg" alt="" />
+									<div class="col-sm-5"><br><br><br>
+										<img class="img-responsive" src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\Mobile-phone.png" width="100" height="742" alt="" />
 									</div>	
 								</div>	
 							</div>	
@@ -569,8 +569,8 @@ section.home .intro{
 											<a class="btn btn-default">Shop Now</a>
 										</div>
 									</div>
-									<div class="col-sm-5">
-										<img class="img-responsive" src="images/option.png" alt="" />
+									<div class="col-sm-5"><br>
+										<img class="img-responsive" src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\product-slide3.png" alt="" />
 									</div>	
 								</div>	
 							</div>	
@@ -586,8 +586,8 @@ section.home .intro{
 											<a class="btn btn-default">Shop Now</a>
 										</div>
 									</div>
-									<div class="col-sm-5">
-										<img class="img-responsive" src="images/person.png" alt="" />
+									<div class="col-sm-5"><br>
+										<img class="img-responsive" src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\Samsung-SHUD-TV.png" alt="" />
 									</div>	
 								</div>	
 							</div>	
@@ -603,8 +603,8 @@ section.home .intro{
 											<a class="btn btn-default">Shop Now</a>
 										</div>
 									</div>
-									<div class="col-sm-5">
-										<img class="img-responsive" src="images/option.png" alt="" />
+									<div class="col-sm-5"><br>
+										<img class="img-responsive" src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\desk-slide.png" alt="" />
 									</div>	
 								</div>	
 							</div>	
@@ -620,8 +620,8 @@ section.home .intro{
 											<a class="btn btn-default">Shop Now</a>
 										</div>
 									</div>
-									<div class="col-sm-5">
-										<img class="img-responsive" src="images/person.png" alt="" />
+									<div class="col-sm-5"><br>
+										<img class="img-responsive" src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\product-slide3.png" alt="" />
 									</div>	
 								</div>	
 							</div>	

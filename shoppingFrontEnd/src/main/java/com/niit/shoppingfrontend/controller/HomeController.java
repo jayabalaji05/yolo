@@ -7,6 +7,7 @@
 	
 	@Controller
 	public class HomeController {
+		
 		@RequestMapping("/")
 		public String gotohome()
 		{
@@ -47,5 +48,10 @@
 		public String registeration()
 		{
 			return "registration";
+		}
+		@RequestMapping("/products")
+		public String products()
+		{
+			return "product";
 		}
 	}

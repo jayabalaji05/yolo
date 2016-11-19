@@ -155,7 +155,7 @@ html {
 
 body {
   min-height: 3000px;
-  padding-top: 70px;
+  padding-top: 5px;
   font-family: 'Open Sans', sans-serif;
 }
 
