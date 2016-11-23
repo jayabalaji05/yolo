@@ -9,13 +9,13 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Entity
-@Table
+@Table(name="CATEGORY")
 public class Category {
 	@Id
 private String id;
-	@Column
+	@Column(name="name")
 private String name;
-	@Column
+	@Column(name="description")
 private String description;
 public String getId() {
 	return id;

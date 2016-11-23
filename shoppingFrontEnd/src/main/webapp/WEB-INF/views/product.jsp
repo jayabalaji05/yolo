@@ -1005,7 +1005,7 @@ background-color: #428bca;
 				</div>
 			</div>
 		</section>
-		<br><br><br>
+		<br><br><br><br><br><br><br><br><br>
 		<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

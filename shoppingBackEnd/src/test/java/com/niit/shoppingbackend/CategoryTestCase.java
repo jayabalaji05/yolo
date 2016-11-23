@@ -23,14 +23,15 @@ static Category category;
 static CategoryDAO categoryDAO;
 
 @BeforeClass
+@Autowired
 public static void init()
 {
 	context = new AnnotationConfigApplicationContext();
-	context.scan("com.niit.shoppingcart");		
+	context.scan("com.niit");		
     context.refresh();
     
     CategoryDAO categoryDAO=(CategoryDAO) context.getBean("categoryDAO");
-    Category category=(Category) context.getBean("category");
+    Category category=(Category)context.getBean("category");
     System.out.println("the object are created");
 
 }
@@ -38,10 +39,11 @@ public static void init()
 @Test
 public void createCategoryTestCase()
 {
-	category.setId("MOB_07");
+	category.setId("MOB07");
 	category.setDescription("Mobile Category");
 	category.setName("mobile Category for u");
 	Boolean status =categoryDAO.save(category);
 	Assert.assertEquals("createCategoryTestCase",true, status);
 }
+
 }

@@ -2,8 +2,11 @@ package com.niit.shoppingbackend.dao;
 
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import com.niit.shoppingbackend.model.Category;
 
+@Component
 public interface CategoryDAO {
 
 	public boolean save(Category category);

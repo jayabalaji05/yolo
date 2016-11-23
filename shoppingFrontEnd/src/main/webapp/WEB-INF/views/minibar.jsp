@@ -324,7 +324,7 @@ input, input::-webkit-input-placeholder {
 }
 
 body { 
-  background: url(http://bjstlh.com/data/wallpapers/5/WDF_538696.jpg) no-repeat center center fixed; 
+  background: url(http://kingofwallpapers.com/blue-background/blue-background-006.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -412,6 +412,7 @@ body {
 
 .small-menu .list-inline{
     margin: 4px 0;
+    margin-right: 200px;
 }
 
 .info-link{
@@ -434,7 +435,7 @@ body {
     font-size: 11px;
     font-weight: 600;
     letter-spacing: -0.5px;
-    margin-left: 6px;
+    margin-left: 20px;
     text-transform: uppercase;
     word-spacing: 2px;
 }
@@ -457,6 +458,7 @@ body {
 .small-menu-2{
     background-color: #f6f6f6;
     
+    
 }
 
 .small-menu-2 .social-link > li > span, 
@@ -472,14 +474,7 @@ body {
 <div class="small-menu small-menu-2">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-7 col-sm-8 col-xs-5">
-                            <ul class="list-inline info-link">
-                                <li title="Language"><i class="fa fa-globe"></i><span class="hidden-xs">Language : English</span></li>
-                                <li title="Hot Line"><i class="fa fa-phone"></i><span class="hidden-xs">(+123) 45678910</span></li>
-                                <li title="Show Time"><i class="fa fa-clock-o"></i><span class="hidden-xs">Sat - Wet : 9.00 - 18.00</span></li>
-                            </ul>
-                        </div> 
-                         <div class="col-md-5 col-sm-4 col-xs-7">
+                    <div class="col-md-5 col-sm-4 col-xs-7">
                             <ul class="list-inline pull-right social-link">
                                 <li><a href="www.gmail.com" title="Email"><i class="fa fa-paper-plane"></i><span class="hidden-sm hidden-xs">jb20594@gmail.com </span></a></li>
                                 <li><a href="www.facebook.com" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>

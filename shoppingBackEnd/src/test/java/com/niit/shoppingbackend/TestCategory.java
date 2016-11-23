@@ -6,9 +6,9 @@ public class TestCategory {
 public static void main(String[] args)
 {
 	AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext();
-	context.scan("com.niit.shoppingbackend.model");
+	context.scan("com.niit.shoppingbackend.dao");
 	context.refresh();
-	context.getBean("category");
+	context.getBean("categoryDAO");
 	context.close();
 	System.out.println("the instance of object is created");
 }

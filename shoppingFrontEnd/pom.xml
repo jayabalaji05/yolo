@@ -9,6 +9,11 @@
   <url>http://maven.apache.org</url>
   <dependencies>
   <dependency>
+    <groupId>com.niit</groupId>
+    <artifactId>shoppingBackEnd</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+</dependency>
+  <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-orm</artifactId>
     <version>4.3.3.RELEASE</version>

@@ -26,7 +26,7 @@
     position: absolute;
 }
 .container {
-    margin-top: 20px;
+    margin-top: 0px;
 }
 .carousel .carousel-indicators li .fa{
 	background-color: #f6f6f6;
@@ -740,7 +740,7 @@ section.home .intro{
 				</div>
 			</div>
 		</section>	
-		<br><br><br><br>
+		<br><br><br>
     <jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

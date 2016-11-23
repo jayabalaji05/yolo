@@ -23,6 +23,7 @@ public class CategoryDAOImpl implements CategoryDAO {
 	 this.sessionFactory=sessionFactory;
 	}
 	
+	@Autowired
 	@Transactional
 	public boolean save(Category category) {
 		
@@ -78,6 +79,8 @@ public class CategoryDAOImpl implements CategoryDAO {
 		Query query= sessionFactory.getCurrentSession().createQuery(hql);
 	    return  query.list();
 	}
-	
+	public Category delete(String id){
+		return null;
+	}
+	}
 
-}
