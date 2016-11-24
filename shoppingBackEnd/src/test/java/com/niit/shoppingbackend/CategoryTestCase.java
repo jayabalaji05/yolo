@@ -30,8 +30,8 @@ public static void init()
 	context.scan("com.niit");		
     context.refresh();
     
-    CategoryDAO categoryDAO=(CategoryDAO) context.getBean("categoryDAO");
-    Category category=(Category)context.getBean("category");
+     categoryDAO=(CategoryDAO) context.getBean("categoryDAO");
+     category=(Category)context.getBean("category");
     System.out.println("the object are created");
 
 }
@@ -39,11 +39,10 @@ public static void init()
 @Test
 public void createCategoryTestCase()
 {
-	category.setId("MOB07");
-	category.setDescription("Mobile Category");
-	category.setName("mobile Category for u");
+	category.setId("123");
+	category.setDescription("Mo");
+	category.setName("mob");
 	Boolean status =categoryDAO.save(category);
-	Assert.assertEquals("createCategoryTestCase",true, status);
+	Assert.assertEquals("createCategoryTestCase",true , status);
 }
-
 }

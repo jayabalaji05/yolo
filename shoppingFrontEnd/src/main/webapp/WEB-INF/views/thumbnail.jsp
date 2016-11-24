@@ -306,8 +306,10 @@ section{
 					<div class="col-sm-12">
 						<div class="">
 							<h1><span class="t-color-1">Best Selling</span>
-								<small class="btn-group hidden-xs"></small>
-									<a class=" btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Categories <i class="fa fa-bars"></i></a>
+								<small class="btn-group hidden-xs">
+									<a class=" btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" 
+									   aria-expanded="false">All Categories <i class="fa fa-bars"></i></a>
+								</small>
 							</h1>
 							<div class="heading-border b-color-1"></div>
 						</div>
@@ -535,6 +537,6 @@ section{
 				</div>
 			</div>
 		</section>		
-				
+			
 </body>
 </html>

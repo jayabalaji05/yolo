@@ -666,31 +666,31 @@ body {
 								<div id="menCollection" class="carousel slide" data-ride="carousel">
 									<div class="carousel-inner">
 										<div class="item active">
-											<a href="#"><img
-												src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\Mobile-phone.png"
-												class="img-responsive" alt="product 1" style="width:400px;height:200px"></a>
+											<a href="mobile_phones"><img
+												src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\iphone7lineup.jpg"
+												class="img-responsive" alt="product 1" style="width:800px;height:200px"></a>
 											<h4>
-												<small>Summer dress floral prints</small>
+												<small><center>Latest Apple iphone 7</center></small>
 											</h4>
 											
 										</div>
 										<!-- End Item -->
 										<div class="item">
 											<a href="#"><img
-												src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\Samsung-SHUD-TV.png"
-												class="img-responsive" alt="product 2" style="width:400px;height:200px"></a>
+												src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\600_006_Galaxy_S7_bk_Left_Angle.png"
+												class="img-responsive" alt="product 2" style="width:800px;height:200px"></a>
 											<h4>
-												<small>Gold sandals with shiny touch</small>
+												<small><center>New Samsung Galaxy S7 Edge</center></small>
 											</h4>
 											
 										</div>
 										<!-- End Item -->
 										<div class="item">
-											<a href="#"><img
-												src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\product-slide3.png"
-												class="img-responsive" alt="product 3" style="width:400px;height:200px"></a>
+											<a href=""><img
+												src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\moto-z-droid-1000-BHlxH8Uhiw.png"
+												class="img-responsive" alt="product 3" style="width:800px;height:200px"></a>
 											<h4>
-												<small>Denin jacket stamped</small>
+												<small><center>Latest Tech in Moto Z</center></small>
 											</h4>
 											
 										</div>
@@ -708,30 +708,30 @@ body {
 						</li>
 						<li class="col-sm-3">
 							<ul>
-								<li class="dropdown-header">Features</li>
-								<li><a href="mobile_phones">Mobile Phone</a></li>
+								<li class="dropdown-header">Mobile Phones</li>
+								<li><a href="mobile_phones">Apple</a></li>
+								<li><a href="mobile_phones">Samsung</a></li>
+								<li><a href="mobile_phones">Motorola</a></li>
+								<li><a href="mobile_phones">Lenovo</a></li>
 								<li class="divider"></li>
-								<li class="dropdown-header">Fonts</li>
-								<li><a href="#">Glyphicon</a></li>
-								<li><a href="#">Google Fonts</a></li>
+							
 							</ul>
 						</li>
 						<li class="col-sm-3">
 							<ul>
-								<li class="dropdown-header">Plus</li>
-								<li><a href="#">Navbar Inverse</a></li>
-								<li><a href="#">Pull Right Elements</a></li>
-								<li><a href="#">Coloured Headers</a></li>
-								<li><a href="#">Primary Buttons & Default</a></li>
+								<li class="dropdown-header">Mobile Accessories</li>
+								<li><a href="#">Headsets & Headphones</a></li>
+								<li><a href="#">Powerbanks</a></li>
+								<li><a href="#">Mobile Cases</a></li>
+								<li><a href="#">Screengaurds</a></li>
 							</ul>
 						</li>
 						<li class="col-sm-3">
 							<ul>
-								<li class="dropdown-header">Much more</li>
-								<li><a href="#">Easy to Customize</a></li>
-								<li><a href="#">Calls to action</a></li>
-								<li><a href="#">Custom Fonts</a></li>
-								<li><a href="#">Slide down on Hover</a></li>
+								<li class="dropdown-header">Wearables</li>
+								<li><a href="#">Smart Watches</a></li>
+								<li><a href="#">Smart Bands</a></li>
+								<li><a href="#">Smart Glasses(VR)</a></li>
 							</ul>
 						</li>
 					</ul></li>

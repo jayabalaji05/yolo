@@ -5,7 +5,37 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+<script>
+$(document).ready(function(){
+    $(window).scroll(function () {
+           if ($(this).scrollTop() > 50) {
+               $('#back-to-top').fadeIn();
+           } else {
+               $('#back-to-top').fadeOut();
+           }
+       });
+       // scroll body to 0px on click
+       $('#back-to-top').click(function () {
+           $('#back-to-top').tooltip('hide');
+           $('body,html').animate({
+               scrollTop: 0
+           }, 800);
+           return false;
+       });
+       
+       $('#back-to-top').tooltip('show');
+
+});
+</script>
 <style>
 @import url(http://fonts.googleapis.com/css?family=Fjalla+One);
 @import url(http://fonts.googleapis.com/css?family=Gudea);
@@ -19,6 +49,13 @@
 	border-top-color: #003;*/
 }
 
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+}
 
 
 .title-widget {
@@ -198,15 +235,14 @@
 							<div class="row">	
 								<div class="col-sm-12">
 									<ul class="list-inline text-center">
-										<li><img class="" src="images/1.gif" /></li>
-										<li><img class="" src="images/2.png" /></li>
-										<li><img class="" src="images/3.png" /></li>
+										<li><img class="" src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\logo\eb436d4929ba8777ab7c2ae71c22a80b-apple-inc-vector-logo.jpg" /></li>
+										<li><img class="" src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\logo\FreeVector-Samsung.jpg" /></li>
+										<li><img class="" src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\logo\motorola-logo.jpg" /></li>
 										<li><img class="" src="images/4.png" /></li>
 										<li><img class="" src="images/5.png" /></li>
-										<li><img class="" src="images/6.png" /></li>
-										<li><img class="" src="images/7.png" /></li>
-										<li><img class="" src="images/8.png" /></li>
-									</ul>
+										<li><img class="" src="images/5.png" /></li>
+										
+																			</ul>
 								</div>
 							</div>
 						</div>
@@ -219,9 +255,8 @@
 										<li><img class="" src="images/3.png" /></li>
 										<li><img class="" src="images/4.png" /></li>
 										<li><img class="" src="images/5.png" /></li>
-										<li><img class="" src="images/6.png" /></li>
-										<li><img class="" src="images/7.png" /></li>
-										<li><img class="" src="images/8.png" /></li>
+										<li><img class="" src="images/5.png" /></li>							
+										
 									</ul>
 								</div>
 							</div>
@@ -345,6 +380,7 @@
                     		</li>
                           </ul>
                        </div>
+                       <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
                 </div>
 </div>
 </footer>
