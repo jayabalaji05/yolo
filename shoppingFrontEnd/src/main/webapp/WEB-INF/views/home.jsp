@@ -348,7 +348,7 @@ section{
 	background-color: #0B82F0; 
 	color: #fff; 
 	font-weight: 600;
-	border-bottom: 2px solid  #63B5B2;;
+	border-bottom: 2px solid  #0B82F0;
 }
 
 .single-add .img-add{
@@ -705,7 +705,7 @@ section.home .intro{
 								<p>Let the Internet Suggest the product for you. </p></div>
 							</block-quote>
 							<br>
-							<div class="pull-right"><a class="btn btn-primary btn-lg"> Click HERE</a>
+							<div class="pull-right"><a href="suggestion_cart" class="btn btn-primary btn-lg"> Click HERE</a>
 							</div> 
 						</div>
 					</div> <!-- section title -->

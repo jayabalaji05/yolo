@@ -4,11 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Admin Page</title>
+<title>Construction</title>
 </head>
 <body>
-<h2>WELCOME TO ADMIN</h2>
-
-<jsp:include page="supplier.jsp"></jsp:include>
+<h2>Page Under Construction</h2>
 </body>
 </html>

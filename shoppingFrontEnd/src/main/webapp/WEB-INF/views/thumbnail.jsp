@@ -22,7 +22,36 @@ $(document).ready(function() {
 .container {
     margin-top: 20px;
 }
+.carousel .carousel-indicators li .fa{
+	background-color: #f6f6f6;
+	padding: 5px 10px; 
+	border-radius: 3px; 
+	color: #999;
+}
 
+.carousel-indicators {
+	margin-left: 25;
+	right: 0;
+	left: auto;
+	top: -70px;
+	width: auto;
+}
+
+.carousel-indicators li.active{
+	border: 1px solid ;
+}
+
+.carousel-indicators li.active .fa{
+	background-color: #1ac4e2;
+	color: #fff;
+}
+
+.carousel-indicators li{
+	border: 1px solid ;
+	display: inline;
+	margin: 0;
+  	text-indent: 0;
+}
 /* Carousel Styles */
 .carousel-indicators .active {
     background-color: #2980b9;
@@ -74,36 +103,7 @@ $(document).ready(function() {
 	opacity: .7;
 	filter: alpha(opacity=70);
 }
-.carousel .carousel-indicators li .fa{
-	background-color: #f6f6f6;
-	padding: 5px 10px; 
-	border-radius: 3px; 
-	color: #999;
-}
 
-.carousel-indicators {
-	margin-left: 0;
-	right: 0;
-	left: auto;
-	top: -70px;
-	width: auto;
-}
-
-.carousel-indicators li.active{
-	border: 1px solid ;
-}
-
-.carousel-indicators li.active .fa{
-	background-color: #1ac4e2;
-	color: #fff;
-}
-
-.carousel-indicators li{
-	border: 1px solid ;
-	display: inline;
-	margin: 0;
-  	text-indent: 0;
-}
 /* Carousel Header Styles */
 .header-text {
     position: absolute;
@@ -233,16 +233,23 @@ section{
 	border-bottom: 1px solid rgba(238, 238, 238, 0.8);
 	padding-bottom: 10px;
 }
-
-.featured-product .thumbnail .btn{
-	margin-top: 10px; 
-	border: 0; 
-	border-bottom: 2px solid #8AAA63;
-	color: #fff; 
-	background-color: #8ec63f; 
-	font-weight: 600; 
-	font-size: 13px;
+.featured-product small a.btn .fa{
+	margin-left: -1px;
+	font-size: 12px;
 }
+
+
+.featured-product small a.btn{
+	background-color: #fff;
+	color: #000; 
+	display: block;
+	font-size: 13px; 
+	padding: 4px 8px;
+	border-radius: 3px; 
+	border: 1px solid #eee; 
+	margin-left: -30px;
+}
+
 
 .featured-product .thumbnail span{
 	color: #aaa; 
@@ -250,7 +257,7 @@ section{
 	font-size: 12px;
 }
 .featured-product .thumbnail strong{
-	color: #1ac4e2;
+	color: #0873d6;
 	font-weight: 600; 
 	font-size: 22px;
 }
@@ -274,7 +281,6 @@ section{
 .featured-product .thumbnail:hover .service-link .fa{
 	opacity: 1;
 }
-
 .service-link{
 	position: relative;
 	display: block;
@@ -287,6 +293,7 @@ section{
 	top: 60px;  
 	left: auto;
 }
+
 .service-link .fa{
 	width: 30px; 
 	background-color: #1ac4e2; 
@@ -309,17 +316,13 @@ section{
 								<small class="btn-group hidden-xs">
 									<a class=" btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" 
 									   aria-expanded="false">All Categories <i class="fa fa-bars"></i></a>
-								</small>
-							</h1>
+								</small></h1>
 							<div class="heading-border b-color-1"></div>
 						</div>
 					</div>
 				</div> <!-- section title -->
 				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-					<ol class="carousel-indicators">
-						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"><i class="fa fa-angle-left"></i></li>
-						<li data-target="#carousel-example-generic" data-slide-to="1"><i class="fa fa-angle-right"></i></li>
-					</ol>
+					
 					<div class="carousel-inner" role="listbox">
 						<div class="item active">
 							<div class="row">
@@ -345,7 +348,7 @@ section{
 											</div>
 											<h3>Lorem ipsum dolor sit amet dolorem molestie</h3>
 											<strong>$899.00</strong>
-											<div><a href="#" class="btn btn-default" role="button">Add to Cart</a><span class="pull-right"><i class="fa fa-heart-o"></i> Add to Wishlist</span></div>
+											<div><a href="#" class="btn btn-default" role="button">Add to Cart</a></div>
 										</div>
 									</div>
 								</div>
@@ -370,7 +373,7 @@ section{
 											</div>
 											<h3>Lorem ipsum dolor sit amet dolorem molestie</h3>
 											<strong>$899.00</strong>
-											<div><a href="#" class="btn btn-default" role="button">Add to Cart</a><span class="pull-right"><i class="fa fa-heart-o"></i> Add to Wishlist</span></div>
+											<div><a href="#" class="btn btn-default" role="button">Add to Cart</a></div>
 										</div>
 									</div>
 								</div>
@@ -395,7 +398,7 @@ section{
 											</div>
 											<h3>Lorem ipsum dolor sit amet dolorem molestie</h3>
 											<strong>$899.00</strong>
-											<div><a href="#" class="btn btn-default" role="button">Add to Cart</a><span class="pull-right"><i class="fa fa-heart-o"></i> Add to Wishlist</span></div>
+											<div><a href="#" class="btn btn-default" role="button">Add to Cart</a></div>
 										</div>
 									</div>
 								</div>
@@ -421,7 +424,7 @@ section{
 											<h3>Lorem ipsum dolor sit amet dolorem molestie</h3>
 											<strong>$899.00</strong>
 											<div>
-												<a href="#" class="btn btn-default" role="button">Add to Cart</a><span class="pull-right"><i class="fa fa-heart-o"></i> Add to Wishlist</span></div>
+												<a href="#" class="btn btn-default" role="button">Add to Cart</a></div>
 										</div>
 									</div>
 								</div>
@@ -451,7 +454,7 @@ section{
 											</div>
 											<h3>Lorem ipsum dolor sit amet dolorem molestie</h3>
 											<strong>$899.00</strong>
-											<div><a href="#" class="btn btn-default" role="button">Add to Cart</a><span class="pull-right"><i class="fa fa-heart-o"></i> Add to Wishlist</span></div>
+											<div><a href="#" class="btn btn-default" role="button">Add to Cart</a></div>
 										</div>
 									</div>
 								</div>
@@ -476,7 +479,7 @@ section{
 											</div>
 											<h3>Lorem ipsum dolor sit amet dolorem molestie</h3>
 											<strong>$899.00</strong>
-											<div><a href="#" class="btn btn-default" role="button">Add to Cart</a><span class="pull-right"><i class="fa fa-heart-o"></i> Add to Wishlist</span></div>
+											<div><a href="#" class="btn btn-default" role="button">Add to Cart</a></div>
 										</div>
 									</div>
 								</div>
@@ -501,7 +504,7 @@ section{
 											</div>
 											<h3>Lorem ipsum dolor sit amet dolorem molestie</h3>
 											<strong>$899.00</strong>
-											<div><a href="#" class="btn btn-default" role="button">Add to Cart</a><span class="pull-right"><i class="fa fa-heart-o"></i> Add to Wishlist</span></div>
+											<div><a href="#" class="btn btn-default" role="button">Add to Cart</a></div>
 										</div>
 									</div>
 								</div>
@@ -527,7 +530,7 @@ section{
 											<h3>Lorem ipsum dolor sit amet dolorem molestie</h3>
 											<strong>$899.00</strong>
 											<div>
-												<a href="#" class="btn btn-default" role="button">Add to Cart</a><span class="pull-right"><i class="fa fa-heart-o"></i> Add to Wishlist</span></div>
+												<a href="#" class="btn btn-default" role="button">Add to Cart</a></div>
 										</div>
 									</div>
 								</div>

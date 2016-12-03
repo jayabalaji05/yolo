@@ -324,7 +324,7 @@ input, input::-webkit-input-placeholder {
 }
 
 body { 
-  background: url(http://kingofwallpapers.com/blue-background/blue-background-006.jpg) no-repeat center center fixed; 
+  background: url(http://cdn.wonderfulengineering.com/wp-content/uploads/2014/09/blue-wallpaper-36.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -476,11 +476,11 @@ body {
                     <div class="row">
                     <div class="col-md-5 col-sm-4 col-xs-7">
                             <ul class="list-inline pull-right social-link">
-                                <li><a href="www.gmail.com" title="Email"><i class="fa fa-paper-plane"></i><span class="hidden-sm hidden-xs">jb20594@gmail.com </span></a></li>
-                                <li><a href="www.facebook.com" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                 <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                 <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                               <li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.gmail.co.in/" title="Email" target="_blank"><i class="fa fa-paper-plane"></i><span class="hidden-sm hidden-xs">jb20594@gmail.com </span></a></li>
+                                <li><a href="https://www.facebook.com/" class="icoFacebook" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                 <li><a href="https://www.twitter.com/" class="icoTwitter" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                 <li><a href="https://www.plus.google.com/" class="icoGoogle" title="Google +" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                               <li><a href="https://www.instagram.com/" class="icoInstagram" title="Instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                     </div>

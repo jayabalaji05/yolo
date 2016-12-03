@@ -31,7 +31,7 @@ import org.springframework.stereotype.Controller;
 		@RequestMapping("/welcome")
 		public String validate(@RequestParam("userID")String userID,@RequestParam("password") String pwd,HttpSession Session)
 		{
-			if(userID.equals("niit") && pwd.equals("niit"))
+			if((userID.equals("niit") && pwd.equals("niit"))||(userID.equals("admin")&&pwd.equals("admin")))
 			{
 				Session.setAttribute("SuccessMessage","Login Successful");
 			}
@@ -39,8 +39,9 @@ import org.springframework.stereotype.Controller;
 			{
 				Session.setAttribute("ErrorMessage","Invalid Credentials");
 			}
-			return "index";
+			return "supplier";
 		}
+		
 		@RequestMapping("/login")
 		public String login( Model model)
 		{
@@ -57,6 +58,11 @@ import org.springframework.stereotype.Controller;
 		{
 			return "product";
 		}
+		@RequestMapping("/suggestion_cart")
+		public String suggestion()
+		{
+			return "suggestion";
+		}
 		@RequestMapping("/logout")
 		public String logout(HttpSession Session, HttpServletResponse response){
 			response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new copy of the page from the origin server
@@ -65,5 +71,15 @@ import org.springframework.stereotype.Controller;
 			response.setHeader("Pragma", "no-cache"); //HTTP 1.0 backward compatibility
 			Session.invalidate();
 			return "home";
+		}
+		@RequestMapping("/wedding_suggestion")
+		public String wedding()
+		{
+			return "suggestion1";
+		}
+		@RequestMapping("/birthday_suggestion")
+		public String birthday()
+		{
+			return "suggestion2";
 		}
 	}

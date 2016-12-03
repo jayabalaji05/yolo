@@ -39,10 +39,35 @@ public static void init()
 @Test
 public void createCategoryTestCase()
 {
-	category.setId("123");
+	category.setId("124");
 	category.setDescription("Mo");
 	category.setName("mob");
 	Boolean status =categoryDAO.save(category);
 	Assert.assertEquals("createCategoryTestCase",true , status);
+}
+@Test
+public void deleteCategoryTestCase()
+{
+	category.setId("124");
+	boolean status=categoryDAO.delete(category);
+	Assert.assertEquals("Delete Category test case",true,status);
+}
+@Test
+public void updateCategoryTestCase()
+{
+	category.setId("124");
+	category.setDescription("mobile");
+	boolean status=categoryDAO.update(category);
+	Assert.assertEquals("Update Category test case",true,status);
+}
+@Test
+public void getCategoryTestCase()
+{
+	Assert.assertEquals("Get Category Test case",null,categoryDAO.get("abcd"));
+}
+@Test
+public void getAllCategoryTestCase()
+{
+	Assert.assertEquals("Get All Category Test case",12,categoryDAO.list().size());
 }
 }

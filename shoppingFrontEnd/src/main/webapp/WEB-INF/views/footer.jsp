@@ -39,7 +39,10 @@ $(document).ready(function(){
 <style>
 @import url(http://fonts.googleapis.com/css?family=Fjalla+One);
 @import url(http://fonts.googleapis.com/css?family=Gudea);
-.footer1 {
+section{
+	padding: 3rem 0;
+}
+.footer1{
     background: #fff url("../images/footer/footer-bg.png") repeat scroll left top;
 	padding-top: 40px;
 	padding-right: 0;
@@ -87,6 +90,7 @@ $(document).ready(function(){
 
 .widget_nav_menu ul {
     list-style: outside none none;
+    text-align:left;
     padding-left: 0;
 }
 
@@ -95,6 +99,7 @@ $(document).ready(function(){
     content: "";
     height: 3px;
     left: 0;
+    text-align:left;
     position: absolute;
     top: 7px;
     width: 3px;
@@ -109,6 +114,7 @@ $(document).ready(function(){
     text-transform: uppercase;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     margin-bottom: 7px;
+    text-align:left;
     padding-bottom: 7px;
 	width:95%;
 }
