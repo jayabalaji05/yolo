@@ -1077,14 +1077,164 @@ body {
 							</ul>
 						</li>
 					</ul></li>
-				<li class="dropdown"><a class="dropdown-toggle"
-					data-toggle="dropdown" href="#">About <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Page 1-1</a></li>
-						<li><a href="#">Page 1-2</a></li>
-						<li><a href="#">Page 1-3</a></li>
+				<li class="dropdown mega-dropdown"><a href="#"
+					class="dropdown-toggle" data-toggle="dropdown">Electronics<span
+						class="caret"></span></a>
+					<ul class="dropdown-menu mega-dropdown-menu">
+						<li class="col-sm-3">
+							<ul>
+								<li class="dropdown-header">Appliances</li>
+								<div id="menCollection" class="carousel slide" data-ride="carousel">
+									<div class="carousel-inner">
+										<div class="item active">
+											<a href="mobile_phones"><img
+												src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\iphone-7-plus-silver.jpg"
+												class="img-responsive" alt="product 1" style="width:800px;height:200px"></a>
+											<h4>
+												<small><center>Latest Apple iphone 7</center></small>
+											</h4>
+											
+										</div>
+										<!-- End Item -->
+										<div class="item">
+											<a href="#"><img
+												src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\600_006_Galaxy_S7_bk_Left_Angle.png"
+												class="img-responsive" alt="product 2" style="width:800px;height:200px"></a>
+											<h4>
+												<small><center>New Samsung Galaxy S7 Edge</center></small>
+											</h4>
+											
+										</div>
+										<!-- End Item -->
+										<div class="item">
+											<a href=""><img
+												src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\moto-z-motorola-lenovo-2-official.jpg"
+												class="img-responsive" alt="product 3" style="width:800px;height:200px"></a>
+											<h4>
+												<small><center>Latest Tech in Moto Z</center></small>
+											</h4>
+											
+										</div>
+										<!-- End Item -->
+									</div>
+									<!-- End Carousel Inner -->
+									<!-- Controls -->
+									
+								</div>
+								<!-- /.carousel -->
+								<li class="divider"></li>
+								<li><a href="mobile_phones">View all Collection <span
+										class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+							</ul>
+						</li>
+						<li class="col-sm-3">
+							<ul>
+								<li class="dropdown-header">Mobile Phones</li>
+								<li><a href="mobile_phones">Apple</a></li>
+								<li><a href="mobile_phones">Samsung</a></li>
+								<li><a href="mobile_phones">Motorola</a></li>
+								<li><a href="mobile_phones">Lenovo</a></li>
+								<li class="divider"></li>
+							
+							</ul>
+						</li>
+						<li class="col-sm-3">
+							<ul>
+								<li class="dropdown-header">Mobile Accessories</li>
+								<li><a href="#">Headsets & Headphones</a></li>
+								<li><a href="#">Powerbanks</a></li>
+								<li><a href="#">Mobile Cases</a></li>
+								<li><a href="#">Screengaurds</a></li>
+							</ul>
+						</li>
+						<li class="col-sm-3">
+							<ul>
+								<li class="dropdown-header">Wearables</li>
+								<li><a href="#">Smart Watches</a></li>
+								<li><a href="#">Smart Bands</a></li>
+								<li><a href="#">Smart Glasses(VR)</a></li>
+							</ul>
+						</li>
 					</ul></li>
-				<li><a href="#">Contact</a></li>
+				<li class="dropdown mega-dropdown"><a href="#"
+					class="dropdown-toggle" data-toggle="dropdown">Books & More<span
+						class="caret"></span></a>
+					<ul class="dropdown-menu mega-dropdown-menu">
+						<li class="col-sm-3">
+							<ul>
+								<li class="dropdown-header">Electronics</li>
+								<div id="menCollection" class="carousel slide" data-ride="carousel">
+									<div class="carousel-inner">
+										<div class="item active">
+											<a href="mobile_phones"><img
+												src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\iphone-7-plus-silver.jpg"
+												class="img-responsive" alt="product 1" style="width:800px;height:200px"></a>
+											<h4>
+												<small><center>Latest Apple iphone 7</center></small>
+											</h4>
+											
+										</div>
+										<!-- End Item -->
+										<div class="item">
+											<a href="#"><img
+												src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\600_006_Galaxy_S7_bk_Left_Angle.png"
+												class="img-responsive" alt="product 2" style="width:800px;height:200px"></a>
+											<h4>
+												<small><center>New Samsung Galaxy S7 Edge</center></small>
+											</h4>
+											
+										</div>
+										<!-- End Item -->
+										<div class="item">
+											<a href=""><img
+												src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\moto-z-motorola-lenovo-2-official.jpg"
+												class="img-responsive" alt="product 3" style="width:800px;height:200px"></a>
+											<h4>
+												<small><center>Latest Tech in Moto Z</center></small>
+											</h4>
+											
+										</div>
+										<!-- End Item -->
+									</div>
+									<!-- End Carousel Inner -->
+									<!-- Controls -->
+									
+								</div>
+								<!-- /.carousel -->
+								<li class="divider"></li>
+								<li><a href="mobile_phones">View all Collection <span
+										class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+							</ul>
+						</li>
+						<li class="col-sm-3">
+							<ul>
+								<li class="dropdown-header">Mobile Phones</li>
+								<li><a href="mobile_phones">Apple</a></li>
+								<li><a href="mobile_phones">Samsung</a></li>
+								<li><a href="mobile_phones">Motorola</a></li>
+								<li><a href="mobile_phones">Lenovo</a></li>
+								<li class="divider"></li>
+							
+							</ul>
+						</li>
+						<li class="col-sm-3">
+							<ul>
+								<li class="dropdown-header">Mobile Accessories</li>
+								<li><a href="#">Headsets & Headphones</a></li>
+								<li><a href="#">Powerbanks</a></li>
+								<li><a href="#">Mobile Cases</a></li>
+								<li><a href="#">Screengaurds</a></li>
+							</ul>
+						</li>
+						<li class="col-sm-3">
+							<ul>
+								<li class="dropdown-header">Wearables</li>
+								<li><a href="#">Smart Watches</a></li>
+								<li><a href="#">Smart Bands</a></li>
+								<li><a href="#">Smart Glasses(VR)</a></li>
+							</ul>
+						</li>
+					</ul></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<c:if test="${empty SuccessMessage}">

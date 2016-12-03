@@ -288,8 +288,8 @@ section{
                                 <h1 class="title-widget">Useful links</h1>
                                 
                                 <ul>
-                                	<li><a  href="#"><i class="fa fa-angle-double-right"></i> About Us</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
+                                	<li><a  href="about_us"><i class="fa fa-angle-double-right"></i> About Us</a></li>
+                                    <li><a  href="contact_us"><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
                                     <li><a  href="#"><i class="fa fa-angle-double-right"></i> Success Stories</a></li>
                                     <li><a  href="#"><i class="fa fa-angle-double-right"></i> PG Courses</a></li>
                                     </ul>

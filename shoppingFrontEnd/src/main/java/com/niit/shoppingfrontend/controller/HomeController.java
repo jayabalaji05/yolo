@@ -82,4 +82,14 @@ import org.springframework.stereotype.Controller;
 		{
 			return "suggestion2";
 		}
+		@RequestMapping("/about_us")
+		public String aboutus()
+		{
+			return "aboutus";
+		}
+		@RequestMapping("/contact_us")
+		public String contactus()
+		{
+			return "contactus";
+		}
 	}
