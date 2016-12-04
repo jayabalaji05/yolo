@@ -9,6 +9,6 @@
 <body>
 <h2>WELCOME TO ADMIN</h2>
 
-<jsp:include page="supplier.jsp"></jsp:include>
+<jsp:include page="category.jsp"></jsp:include>
 </body>
 </html>

@@ -1078,7 +1078,7 @@ body {
 						</li>
 					</ul></li>
 				<li class="dropdown mega-dropdown"><a href="#"
-					class="dropdown-toggle" data-toggle="dropdown">Electronics<span
+					class="dropdown-toggle" data-toggle="dropdown">Appliances<span
 						class="caret"></span></a>
 					<ul class="dropdown-menu mega-dropdown-menu">
 						<li class="col-sm-3">
@@ -1088,30 +1088,29 @@ body {
 									<div class="carousel-inner">
 										<div class="item active">
 											<a href="mobile_phones"><img
-												src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\iphone-7-plus-silver.jpg"
+												src="https://images-na.ssl-images-amazon.com/images/I/71Gni5tDf9L._SL1500_.jpg"
 												class="img-responsive" alt="product 1" style="width:800px;height:200px"></a>
 											<h4>
-												<small><center>Latest Apple iphone 7</center></small>
+												<small><center>Latest Sony 4K Television</center></small>
 											</h4>
-											
 										</div>
 										<!-- End Item -->
 										<div class="item">
 											<a href="#"><img
-												src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\600_006_Galaxy_S7_bk_Left_Angle.png"
+												src="http://www.samsung.com/uk/discover/multimedia/article_images/ces-hero-image-v1%202.jpg"
 												class="img-responsive" alt="product 2" style="width:800px;height:200px"></a>
 											<h4>
-												<small><center>New Samsung Galaxy S7 Edge</center></small>
+												<small><center>New Samsung Ultra HD Television</center></small>
 											</h4>
 											
 										</div>
 										<!-- End Item -->
 										<div class="item">
 											<a href=""><img
-												src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\moto-z-motorola-lenovo-2-official.jpg"
+												src="http://image3.mouthshut.com/images/imagesp/925748105s.jpg"
 												class="img-responsive" alt="product 3" style="width:800px;height:200px"></a>
 											<h4>
-												<small><center>Latest Tech in Moto Z</center></small>
+												<small><center>Latest 4k VU Television</center></small>
 											</h4>
 											
 										</div>
@@ -1129,11 +1128,11 @@ body {
 						</li>
 						<li class="col-sm-3">
 							<ul>
-								<li class="dropdown-header">Mobile Phones</li>
-								<li><a href="mobile_phones">Apple</a></li>
-								<li><a href="mobile_phones">Samsung</a></li>
-								<li><a href="mobile_phones">Motorola</a></li>
-								<li><a href="mobile_phones">Lenovo</a></li>
+								<li class="dropdown-header">Television</li>
+								<li><a href="appliance_products">Sony</a></li>
+								<li><a href="appliance_products">Samsung</a></li>
+								<li><a href="appliance_products">VU</a></li>
+								<li><a href="appliance_products">Panasonic</a></li>
 								<li class="divider"></li>
 							
 							</ul>
@@ -1162,35 +1161,35 @@ body {
 					<ul class="dropdown-menu mega-dropdown-menu">
 						<li class="col-sm-3">
 							<ul>
-								<li class="dropdown-header">Electronics</li>
+								<li class="dropdown-header">Books & More</li>
 								<div id="menCollection" class="carousel slide" data-ride="carousel">
 									<div class="carousel-inner">
 										<div class="item active">
-											<a href="mobile_phones"><img
-												src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\iphone-7-plus-silver.jpg"
+											<a href=""><img
+												src="https://universecityblog.files.wordpress.com/2011/06/harry-potter-books-full-set.jpg"
 												class="img-responsive" alt="product 1" style="width:800px;height:200px"></a>
 											<h4>
-												<small><center>Latest Apple iphone 7</center></small>
+												<small><center>All Harry Potter Collections</center></small>
 											</h4>
 											
 										</div>
 										<!-- End Item -->
 										<div class="item">
 											<a href="#"><img
-												src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\600_006_Galaxy_S7_bk_Left_Angle.png"
+												src="http://media.theworks.co.uk/images/10009227_Z.jpg"
 												class="img-responsive" alt="product 2" style="width:800px;height:200px"></a>
 											<h4>
-												<small><center>New Samsung Galaxy S7 Edge</center></small>
+												<small><center>All New Dan Brown Collections</center></small>
 											</h4>
 											
 										</div>
 										<!-- End Item -->
 										<div class="item">
 											<a href=""><img
-												src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\moto-z-motorola-lenovo-2-official.jpg"
+												src="http://www.chetanbhagat.com/wp-content/uploads/cover_highres_2states.jpg"
 												class="img-responsive" alt="product 3" style="width:800px;height:200px"></a>
 											<h4>
-												<small><center>Latest Tech in Moto Z</center></small>
+												<small><center>New Chetan bhagat Collections</center></small>
 											</h4>
 											
 										</div>
@@ -1209,10 +1208,10 @@ body {
 						<li class="col-sm-3">
 							<ul>
 								<li class="dropdown-header">Mobile Phones</li>
-								<li><a href="mobile_phones">Apple</a></li>
-								<li><a href="mobile_phones">Samsung</a></li>
-								<li><a href="mobile_phones">Motorola</a></li>
-								<li><a href="mobile_phones">Lenovo</a></li>
+								<li><a href="Books&More">Apple</a></li>
+								<li><a href="Books&More">Samsung</a></li>
+								<li><a href="Books&More">Motorola</a></li>
+								<li><a href="Books&More">Lenovo</a></li>
 								<li class="divider"></li>
 							
 							</ul>

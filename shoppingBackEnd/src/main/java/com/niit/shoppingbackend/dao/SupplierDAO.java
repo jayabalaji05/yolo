@@ -2,8 +2,11 @@ package com.niit.shoppingbackend.dao;
 
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import com.niit.shoppingbackend.model.Supplier;
 
+@Component
 public interface SupplierDAO {
 	public boolean save(Supplier category);
 	public boolean update(Supplier category);

@@ -31,15 +31,24 @@ import org.springframework.stereotype.Controller;
 		@RequestMapping("/welcome")
 		public String validate(@RequestParam("userID")String userID,@RequestParam("password") String pwd,HttpSession Session)
 		{
-			if((userID.equals("niit") && pwd.equals("niit"))||(userID.equals("admin")&&pwd.equals("admin")))
+			if((userID.equals("niit") && pwd.equals("niit")))
 			{
 				Session.setAttribute("SuccessMessage","Login Successful");
 			}
 			else
 			{
+				if((userID.equals("admin")&&pwd.equals("admin")))
+				{
+					Session.setAttribute("SuccessMessage","Login Successful");
+					return "admin";
+				}
+				else
+				{
+					Session.setAttribute("ErrorMessage","Invalid Credentials");
+				}
 				Session.setAttribute("ErrorMessage","Invalid Credentials");
 			}
-			return "supplier";
+			return "index";
 		}
 		
 		@RequestMapping("/login")
@@ -87,9 +96,24 @@ import org.springframework.stereotype.Controller;
 		{
 			return "aboutus";
 		}
+		@RequestMapping("/appliance_products")
+		public String appliance()
+		{
+			return "product1";
+		}
+		@RequestMapping("/Books&More")
+		public String books()
+		{
+			return "product2";
+		}
 		@RequestMapping("/contact_us")
 		public String contactus()
 		{
 			return "contactus";
+		}
+		@RequestMapping("/display_category")
+		public String display()
+		{
+			return "displaycategory";
 		}
 	}

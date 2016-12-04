@@ -643,7 +643,7 @@ section.home .intro{
 						<div class="">
 							<h1><span class="t-color-1">Featured Products</span>
 							<small class="btn-group hidden-xs"></small>
-							<a href="#" class=" btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Categories <i class="fa fa-bars"></i></a>
+							<a href="appliance_products" class=" btn btn-default btn-sm dropdown-toggle" aria-haspopup="true" aria-expanded="false">All Categories <i class="fa fa-bars"></i></a>
 							</h1>
 							<div class="heading-border b-color-1"></div>
 						</div>

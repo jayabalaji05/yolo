@@ -1,67 +1,110 @@
 package com.niit.shoppingfrontend.controller;
 
+import java.util.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
+import com.google.gson.Gson;
 import com.niit.shoppingbackend.dao.SupplierDAO;
 import com.niit.shoppingbackend.model.Supplier;
 
-
+@Controller
 public class SupplierController {
-	
-	private SupplierDAO SupplierDAO;
-	
-	@Autowired(required=true)
-	@Qualifier(value="SupplierDAO")
-	public void setSupplierDAO(SupplierDAO ps){
-		this.SupplierDAO = ps;
+	@Autowired	
+	SupplierDAO cdao;
+	public String getdata()
+	{
+		ArrayList list=(ArrayList) cdao.list();
+		Gson gson = new Gson();
+		String jsonInString = gson.toJson(list);
+		return jsonInString;
 	}
 	
-	@RequestMapping(value = "/suppliers", method = RequestMethod.GET)
-	public String listSuppliers(Model model) {
-		model.addAttribute("Supplier", new Supplier());
-		model.addAttribute("SupplierList", this.SupplierDAO.list());
-		model.addAttribute("clickedSuppliers","true");
-		return "admin";
+	// INSERT INTO DATABASE
+	@RequestMapping(value="/Supplier",method=RequestMethod.GET)
+	public ModelAndView DisplaySupplier(Model m)
+	{
+		ModelAndView mv=new ModelAndView("addSupplier","supplier",new Supplier());
+		return mv;		
 	}
 	
-	//For add and update Supplier both
-	@RequestMapping(value= "/Supplier/add", method = RequestMethod.POST)
-	public String addSupplier(@ModelAttribute("Supplier") Supplier Supplier){
+	@RequestMapping(value="/addSupplier",method=RequestMethod.POST)
+	public ModelAndView addSupplier(Supplier supplierId,Model m)
+	{
 		
-	
-			SupplierDAO.save(Supplier);
+		System.out.println("1");
+		cdao.save(supplierId);
+
+		System.out.println("2");
+		m.addAttribute("list", getdata());
+
+		System.out.println("3");
+		ModelAndView mv=new ModelAndView("displaysupplier","supplier",new Supplier());
+		System.out.println("4");
 		
-		return "redirect:/suppliers";
+		System.out.print("Added successfully");
+		return mv;
 		
 	}
 	
-	@RequestMapping("Supplier/remove/{id}")
-    public String deleteSupplier(@PathVariable("id") Supplier id,ModelMap model) throws Exception{
+	// VIEW THE DATAS IN H2 DB
+	@RequestMapping(value="/viewSupplier",method=RequestMethod.GET)
+	public ModelAndView viewSupplier(Model m)
+	{
+		m.addAttribute("list",getdata());
+		ModelAndView mv=new ModelAndView("displaysupplier","supplier",new Supplier());
+		return mv;
+	}
+	
+	//EDIT VALUES FROM H2 DATABASE
+	@RequestMapping(value="/editSupplier",method=RequestMethod.GET)
+	public ModelAndView editSupplier(@RequestParam("Id")String supplierId,Model m)
+	{
+			
+		Supplier c=cdao.get(supplierId);
+		m.addAttribute("Supplier",c);
+		ModelAndView mv=new ModelAndView("editsupplier","Supplier",c);
+		return mv; 
+			
+	}
+	
+	@RequestMapping(value="/editSupplier",method=RequestMethod.POST)
+	public ModelAndView editSupplier(Supplier supplier,Model m)
+	{
+		System.out.println(supplier.getId());
+	    System.out.println(supplier.getName());
+		//System.out.println("Added to database");
+		cdao.update(supplier);
+		m.addAttribute("list",getdata());
+		ModelAndView mv=new ModelAndView("displaysupplier","Supplier",new Supplier());
+		return mv;
+	}
+	
 		
-       try {
-		SupplierDAO.delete(id);
-		model.addAttribute("message","Successfully Added");
-	} catch (Exception e) {
-		model.addAttribute("message",e.getMessage());
-		e.printStackTrace();
+	// DELETE VALUES FROM H2 DATABASE
+	@RequestMapping(value="/delsupplier",method=RequestMethod.GET)
+	public ModelAndView delSupplier(@RequestParam("Id") Supplier supplierId,Model m)
+	{
+		cdao.delete(supplierId);
+		m.addAttribute("list",getdata());
+		ModelAndView mv=new ModelAndView("displaysupplier","displaysupplier",new Supplier());
+		return mv;
 	}
-       //redirectAttrs.addFlashAttribute(arg0, arg1)
-        return "redirect:/categories";
-    }
- 
-    @RequestMapping("Supplier/edit/{id}")
-    public String editSupplier(@PathVariable("id") String id, Model model){
-    	System.out.println("editSupplier");
-        model.addAttribute("Supplier", this.SupplierDAO.get(id));
-        model.addAttribute("listSuppliers", this.SupplierDAO.list());
-        return "Supplier";
-    }
+
+	// DISPLAYS VALUES FROM H2 DATABASE
+	@RequestMapping(value="/displaysupplier",method=RequestMethod.GET)
+	public String getSupplier(Model m)
+	{
+		m.addAttribute("list", getdata());
+		return "displaysupplier";
 	}
+	
+	
+	
+}
