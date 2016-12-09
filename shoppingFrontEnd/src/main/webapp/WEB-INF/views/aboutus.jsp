@@ -147,8 +147,6 @@ body {
   min-height: 3000px;
   padding-top: 23px;
   font-family: 'Open Sans', sans-serif;
-}section{
-	padding: 3rem 0;
 }
 .list-ver{
 	list-style: none;

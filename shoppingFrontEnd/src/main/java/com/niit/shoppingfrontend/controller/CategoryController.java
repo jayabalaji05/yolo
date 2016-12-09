@@ -14,7 +14,6 @@ import org.springframework.web.servlet.ModelAndView;
 import com.google.gson.Gson;
 import com.niit.shoppingbackend.dao.CategoryDAO;
 import com.niit.shoppingbackend.model.Category;
-
 @Controller
 public class CategoryController {
 	@Autowired	
@@ -28,7 +27,7 @@ public class CategoryController {
 	}
 	
 	// INSERT INTO DATABASE
-	@RequestMapping(value="/Category",method=RequestMethod.GET)
+	@RequestMapping(value="/category",method=RequestMethod.GET)
 	public ModelAndView DisplayCategory(Model m)
 	{
 		ModelAndView mv=new ModelAndView("addCategory","category",new Category());
@@ -46,10 +45,10 @@ public class CategoryController {
 		m.addAttribute("list", getdata());
 
 		System.out.println("3");
-		ModelAndView mv=new ModelAndView("displaycategory","category",new Category());
+		ModelAndView mv=new ModelAndView("DisplayCategory","category",new Category());
 		System.out.println("4");
 		
-		System.out.print("Added successfully");
+		//System.out.print("Added successfully");
 		return mv;
 		
 	}
@@ -59,7 +58,7 @@ public class CategoryController {
 	public ModelAndView viewCategory(Model m)
 	{
 		m.addAttribute("list",getdata());
-		ModelAndView mv=new ModelAndView("displaycategory","category",new Category());
+		ModelAndView mv=new ModelAndView("DisplayCategory","category",new Category());
 		return mv;
 	}
 	
@@ -70,7 +69,7 @@ public class CategoryController {
 			
 		Category c=cdao.get(categoryId);
 		m.addAttribute("Category",c);
-		ModelAndView mv=new ModelAndView("editcategory","category",c);
+		ModelAndView mv=new ModelAndView("editCategory","category",c);
 		return mv; 
 			
 	}
@@ -83,7 +82,7 @@ public class CategoryController {
 		//System.out.println("Added to database");
 		cdao.update(category);
 		m.addAttribute("list",getdata());
-		ModelAndView mv=new ModelAndView("displaycategory","category",new Category());
+		ModelAndView mv=new ModelAndView("DisplayCategory","Category",new Category());
 		return mv;
 	}
 	
@@ -94,16 +93,16 @@ public class CategoryController {
 	{
 		cdao.delete(categoryId);
 		m.addAttribute("list",getdata());
-		ModelAndView mv=new ModelAndView("displaycategory","displaycategory",new Category());
+		ModelAndView mv=new ModelAndView("DisplayCategory","DisplayCategory",new Category());
 		return mv;
 	}
 
 	// DISPLAYS VALUES FROM H2 DATABASE
-	@RequestMapping(value="/displayCategory",method=RequestMethod.GET)
+	@RequestMapping(value="/DisplayCategory",method=RequestMethod.GET)
 	public String getCategory(Model m)
 	{
 		m.addAttribute("list", getdata());
-		return "displaycategory";
+		return "DisplayCategory";
 	}
 	
 	

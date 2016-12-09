@@ -111,9 +111,4 @@ import org.springframework.stereotype.Controller;
 		{
 			return "contactus";
 		}
-		@RequestMapping("/display_category")
-		public String display()
-		{
-			return "displaycategory";
-		}
 	}

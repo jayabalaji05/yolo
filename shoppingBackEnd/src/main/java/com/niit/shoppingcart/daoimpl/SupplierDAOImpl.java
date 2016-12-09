@@ -64,4 +64,9 @@ public class SupplierDAOImpl implements SupplierDAO{
 	    return  query.list();
 	}
 
+	public void removeCategory(Supplier id) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
