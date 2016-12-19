@@ -1,110 +1,62 @@
 package com.niit.shoppingfrontend.controller;
-
-import java.util.*;
-
+import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.ModelAndView;
 
-import com.google.gson.Gson;
 import com.niit.shoppingbackend.dao.CategoryDAO;
 import com.niit.shoppingbackend.model.Category;
+
+
+
 @Controller
 public class CategoryController {
-	@Autowired	
-	CategoryDAO cdao;
-	public String getdata()
-	{
-		ArrayList list=(ArrayList) cdao.list();
-		Gson gson = new Gson();
-		String jsonInString = gson.toJson(list);
-		return jsonInString;
-	}
-	
-	// INSERT INTO DATABASE
-	@RequestMapping(value="/category",method=RequestMethod.GET)
-	public ModelAndView DisplayCategory(Model m)
-	{
-		ModelAndView mv=new ModelAndView("addCategory","category",new Category());
-		return mv;		
-	}
-	
-	@RequestMapping(value="/addCategory",method=RequestMethod.POST)
-	public ModelAndView addCategory(Category categoryId,Model m)
-	{
-		
-		System.out.println("1");
-		cdao.save(categoryId);
 
-		System.out.println("2");
-		m.addAttribute("list", getdata());
+	@Autowired
+	CategoryDAO categoryDAO;
+	
+	@RequestMapping(value="/addcategory",method=RequestMethod.GET)
+	public String listPersons(Model model)
+	{
+		model.addAttribute("category",new Category());
+		System.out.println("inside categorycontroller");
+		
+		model.addAttribute("listCategory",categoryDAO.listCategory());
+		return "addcategory";
+	}
+	
+	@RequestMapping(value= "/category/add", method = RequestMethod.POST)
+	public String addCategory(@Valid @ModelAttribute("category") Category category,BindingResult result,HttpServletRequest request)
+	{
+			if (category.getId() == 0) {
+				categoryDAO.addCategory(category);
+			} else {
+				categoryDAO.updateCategory(category);
+			}
 
-		System.out.println("3");
-		ModelAndView mv=new ModelAndView("DisplayCategory","category",new Category());
-		System.out.println("4");
-		
-		//System.out.print("Added successfully");
-		return mv;
-		
-	}
-	
-	// VIEW THE DATAS IN H2 DB
-	@RequestMapping(value="/viewCategory",method=RequestMethod.GET)
-	public ModelAndView viewCategory(Model m)
-	{
-		m.addAttribute("list",getdata());
-		ModelAndView mv=new ModelAndView("DisplayCategory","category",new Category());
-		return mv;
-	}
-	
-	//EDIT VALUES FROM H2 DATABASE
-	@RequestMapping(value="/editCategory",method=RequestMethod.GET)
-	public ModelAndView editCategory(@RequestParam("Id")String categoryId,Model m)
-	{
-			
-		Category c=cdao.get(categoryId);
-		m.addAttribute("Category",c);
-		ModelAndView mv=new ModelAndView("editCategory","category",c);
-		return mv; 
-			
-	}
-	
-	@RequestMapping(value="/editCategory",method=RequestMethod.POST)
-	public ModelAndView editCategory(Category category,Model m)
-	{
-		System.out.println(category.getId());
-	    System.out.println(category.getName());
-		//System.out.println("Added to database");
-		cdao.update(category);
-		m.addAttribute("list",getdata());
-		ModelAndView mv=new ModelAndView("DisplayCategory","Category",new Category());
-		return mv;
-	}
-	
-		
-	// DELETE VALUES FROM H2 DATABASE
-	@RequestMapping(value="/delCategory",method=RequestMethod.GET)
-	public ModelAndView delCategory(@RequestParam("Id") Category categoryId,Model m)
-	{
-		cdao.delete(categoryId);
-		m.addAttribute("list",getdata());
-		ModelAndView mv=new ModelAndView("DisplayCategory","DisplayCategory",new Category());
-		return mv;
-	}
+			return "redirect:/addcategory";
+		}
 
-	// DISPLAYS VALUES FROM H2 DATABASE
-	@RequestMapping(value="/DisplayCategory",method=RequestMethod.GET)
-	public String getCategory(Model m)
-	{
-		m.addAttribute("list", getdata());
-		return "DisplayCategory";
-	}
-	
-	
-	
+		@RequestMapping("/removeid1/{id}")
+		public String removeCategory(@PathVariable("id") int id)
+		{
+			categoryDAO.removeCategory(id);
+			return "redirect:/addcategory";
+		}
+		
+		@RequestMapping("/editid1/{id}")
+		public String editCategory(@PathVariable("id") int id, Model model)
+		{
+			model.addAttribute("category", categoryDAO.getCategoryById(id));
+	        model.addAttribute("listCategory", categoryDAO.listCategory());
+	        return "addcategory";
+		}
+
 }

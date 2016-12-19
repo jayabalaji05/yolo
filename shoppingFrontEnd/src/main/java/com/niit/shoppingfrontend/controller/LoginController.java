@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.niit.shoppingbackend.dao.RegisterDetailsDAOImpl;
 import com.niit.shoppingbackend.model.RegisterDetails;
-import com.niit.shoppingcart.daoimpl.RegisterDetailsDAOImpl;
 
 
 public class LoginController {

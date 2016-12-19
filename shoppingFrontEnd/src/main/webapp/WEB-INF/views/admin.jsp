@@ -1004,7 +1004,7 @@ body {
 		</div>
 		<div class="collapse navbar-collapse js-navbar-collapse">
 			<ul class="nav navbar-nav">
-				<li class="dropdown mega-dropdown"><a href="category"
+				<li class="dropdown mega-dropdown"><a href="addcategory"
 					class="dropdown-toggle" >Category</a>
 					</li>
 				<li class="dropdown mega-dropdown"><a href="supplier"
