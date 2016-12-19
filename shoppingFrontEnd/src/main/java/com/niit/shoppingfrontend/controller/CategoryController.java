@@ -14,8 +14,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.niit.shoppingbackend.dao.CategoryDAO;
 import com.niit.shoppingbackend.model.Category;
 
-
-
 @Controller
 public class CategoryController {
 
@@ -44,14 +42,14 @@ public class CategoryController {
 			return "redirect:/addcategory";
 		}
 
-		@RequestMapping("/removeid1/{id}")
+		@RequestMapping("/removeid/{id}")
 		public String removeCategory(@PathVariable("id") int id)
 		{
 			categoryDAO.removeCategory(id);
 			return "redirect:/addcategory";
 		}
 		
-		@RequestMapping("/editid1/{id}")
+		@RequestMapping("/editid/{id}")
 		public String editCategory(@PathVariable("id") int id, Model model)
 		{
 			model.addAttribute("category", categoryDAO.getCategoryById(id));

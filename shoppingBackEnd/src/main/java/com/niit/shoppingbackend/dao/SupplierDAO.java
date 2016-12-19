@@ -1,7 +1,9 @@
 package com.niit.shoppingbackend.dao;
 
 import java.util.List;
+
 import com.niit.shoppingbackend.model.Supplier;
+
 public interface SupplierDAO {
 	public void addSupplier(Supplier p);
 

@@ -1,70 +1,60 @@
 package com.niit.shoppingfrontend.controller;
+import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.niit.shoppingbackend.dao.SupplierDAO;
 import com.niit.shoppingbackend.model.Supplier;
 
-
-
 @Controller
 public class SupplierController {
-	@Autowired(required=true)
-	private SupplierDAO supplierDAO;
-	
-	@Autowired(required=true)
-	private Supplier supplier;
-	
-	
-	@RequestMapping(value="/supplier")
-	public String listsupplier(Model model)
-	{
-	model.addAttribute("supplier",supplier);
-	model.addAttribute("supplierList",this.supplierDAO.list());
-	return "supplier";
-	}
-	
-	
-	@RequestMapping(value="/addsupplier")
-	public String addsupplier(@ModelAttribute("supplier") Supplier supplier,Model model)
-	{
-		 String newid = supplier.getId();
-		supplier.setId(newid);
-	
-		supplierDAO.save(supplier);
-	/*model.addAttribute("category", category);
-	model.addAttribute("categoryList", this.categoryDAO.list());*/
-		
-	return "redirect:/supplier";
-    }
 
+	@Autowired
+	SupplierDAO supplierDAO;
 	
-	
-	@RequestMapping("/removesupplier/{id}")
-	public String deleteSupplier(@PathVariable("id") Supplier id, ModelMap model)
-	
+	@RequestMapping(value="/addsupplier",method=RequestMethod.GET)
+	public String listPersons(Model model)
 	{
+		model.addAttribute("supplier",new Supplier());
+		System.out.println("inside suppliercontroller");
 		
-			System.out.println("delete");
-			supplierDAO.removeCategory(id);
-		return "redirect:/supplier";
+		model.addAttribute("listSupplier",supplierDAO.listSupplier());
+		return "addsupplier";
 	}
 	
-	
-	@RequestMapping("/editsupplier/{id}")
-	public String editSupplier(@PathVariable("id")String id, Model model)
+	@RequestMapping(value= "/supplier/add", method = RequestMethod.POST)
+	public String addSupplier(@Valid @ModelAttribute("supplier") Supplier supplier,BindingResult result,HttpServletRequest request)
 	{
-		model.addAttribute("supplier",this.supplierDAO.get(id));
-		/*model.addAttribute("category", category);*/
-		model.addAttribute("supplierList", this.supplierDAO.list());
+			if (supplier.getId() == 0) {
+				supplierDAO.addSupplier(supplier);
+			} else {
+				supplierDAO.updateSupplier(supplier);
+			}
+
+			return "redirect:/addsupplier";
+		}
+
+		@RequestMapping("/removeid2/{id}")
+		public String removeSupplier(@PathVariable("id") int id)
+		{
+			supplierDAO.removeSupplier(id);
+			return "redirect:/addsupplier";
+		}
 		
-		return "supplier";
-	}
+		@RequestMapping("/editid2/{id}")
+		public String editSupplier(@PathVariable("id") int id, Model model)
+		{
+			model.addAttribute("supplier", supplierDAO.getSupplierById(id));
+	        model.addAttribute("listSupplier", supplierDAO.listSupplier());
+	        return "addsupplier";
+		}
 
 }

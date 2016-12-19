@@ -12,8 +12,6 @@ import org.springframework.transaction.annotation.Transactional;
 import com.niit.shoppingbackend.model.Supplier;
 
 
-
-
 @Repository("SupplierDAO")
 
 @Transactional
