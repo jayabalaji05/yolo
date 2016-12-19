@@ -1,19 +1,15 @@
 package com.niit.shoppingbackend.dao;
 
 import java.util.List;
-
-import org.springframework.stereotype.Component;
-
 import com.niit.shoppingbackend.model.Supplier;
-
-@Component
 public interface SupplierDAO {
-	public boolean save(Supplier category);
-	public boolean update(Supplier category);
-	public boolean delete(Supplier category);
-	public Supplier get(String id);
-	
-	public List<Supplier> list();
-	public void removeCategory(Supplier id);
+	public void addSupplier(Supplier p);
 
+public void updateSupplier(Supplier p);
+
+public List<Supplier> listSupplier();
+
+public Supplier getSupplierById(int id);
+
+public void removeSupplier(int id);
 }

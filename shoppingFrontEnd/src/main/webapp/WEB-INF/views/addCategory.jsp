@@ -96,8 +96,8 @@
 			<td>${category.id}</td>
 			<td>${category.name}</td>
 			<td>${category.description}</td>
-			<td><a href="<c:url value='/editid1/${category.id}' />" >Edit</a></td>
-			<td><a href="<c:url value='/removeid1/${category.id}' />" >Delete</a></td>
+			<td><a href="<c:url value='/editid/${category.id}' />" >Edit</a></td>
+			<td><a href="<c:url value='/removeid/${category.id}' />" >Delete</a></td>
 		</tr>
 	</c:forEach>
 	</table>

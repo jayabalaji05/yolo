@@ -1007,12 +1007,11 @@ body {
 				<li class="dropdown mega-dropdown"><a href="addcategory"
 					class="dropdown-toggle" >Category</a>
 					</li>
-				<li class="dropdown mega-dropdown"><a href="supplier"
+				<li class="dropdown mega-dropdown"><a href="addsupplier"
 					class="dropdown-toggle" >Supplier<span
 						></span></a>
 					</li>
-				<li class="dropdown mega-dropdown"><a href="product
-				"
+				<li class="dropdown mega-dropdown"><a href="addproduct"
 					class="dropdown-toggle" >Products<span
 						></span></a>
 					</li>

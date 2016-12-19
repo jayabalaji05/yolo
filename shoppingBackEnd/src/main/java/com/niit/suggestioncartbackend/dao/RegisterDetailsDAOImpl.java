@@ -1,4 +1,4 @@
-package com.niit.shoppingcart.daoimpl;
+package com.niit.suggestioncartbackend.dao;
 
 import javax.transaction.Transaction;
 import org.hibernate.Session;
@@ -6,9 +6,10 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-import com.niit.shoppingbackend.dao.RegisterDetailsDAO;
-import com.niit.shoppingbackend.model.RegisterDetails;
-import com.niit.shoppingbackend.model.User;
+
+import com.niit.suggestioncartbackend.model.RegisterDetails;
+import com.niit.suggestioncartbackend.model.User;
+
 
 @Repository("registerDAO")
 public  class RegisterDetailsDAOImpl implements RegisterDetailsDAO{

@@ -2,27 +2,47 @@ package com.niit.shoppingbackend.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
+import javax.validation.constraints.Size;
 
-import org.springframework.stereotype.Component;
+import org.springframework.web.multipart.MultipartFile;
 
-@Component
 @Entity
-@Table
+@Table(name="PRODUCT")
 public class Product {
+
 	@Id
-	private String id;
-	@Column(name="name")
+	@GeneratedValue
+	private int id;
+	
+	@Column
+	@Size(min=2,max=10,message="Name has to be between 2 to 10 characters")
 	private String name;
-	@Column(name="price")
+	
+	@Column
 	private double price;
-	@Column(name="description")
+	
+	@Column
+	@Size(min=2,max=10,message="Name has to be between 2 to 10 characters")
 	private String description;
-	public String getId() {
+	
+	@Transient
+	public MultipartFile image;
+	
+	
+	public int getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public MultipartFile getImage() {
+		return image;
+	}
+	public void setImage(MultipartFile image) {
+		this.image = image;
+	}
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getName() {
@@ -45,4 +65,5 @@ public class Product {
 	}
 	
 
+	
 }
