@@ -14,8 +14,7 @@
 	</style>
 </head>
 <body>
-
-
+<jsp:include page="admin.jsp"></jsp:include>
 <h1>
 	Add a Category
 </h1>

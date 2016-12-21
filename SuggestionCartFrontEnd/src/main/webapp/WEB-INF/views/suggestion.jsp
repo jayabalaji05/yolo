@@ -558,11 +558,9 @@ promote their personal projects</p>
 							<small class="btn-group hidden-xs">
 								<a class=" btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" 
 								   aria-expanded="false">All Categories <i class="fa fa-bars"></i></a>
-								<ul class="dropdown-menu">
-								</ul>
 							</small>
 						</h1>
-						<div class="heading-border b-color-2"></div>
+						<div class="heading-border b-color-3"></div>
 					</div>
 				</div> <!-- section title -->
 				<div id="best-selling" class="carousel slide" data-ride="carousel">

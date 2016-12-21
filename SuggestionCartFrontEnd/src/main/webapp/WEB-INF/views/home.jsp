@@ -604,7 +604,7 @@ section.home .intro{
 										</div>
 									</div>
 									<div class="col-sm-5"><br>
-										<img class="img-responsive" src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\desk-slide.png" alt="" />
+										<img class="img-responsive" src="https://media.playstation.com/is/image/SCEA/playstation-4-slim-vertical-product-shot-01-us-07sep16?$TwoColumn_Image$" alt="" />
 									</div>	
 								</div>	
 							</div>	
@@ -621,7 +621,7 @@ section.home .intro{
 										</div>
 									</div>
 									<div class="col-sm-5"><br>
-										<img class="img-responsive" src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\product-slide3.png" alt="" />
+										<img class="img-responsive" src="http://ciniholdings.com.mt/wp-content/uploads/2015/10/8590669109814-435x435.png" alt="" />
 									</div>	
 								</div>	
 							</div>	

@@ -20,6 +20,21 @@ body {
 }section{
 	padding: 3rem 0;
 }
+
+.t-color-1{ color: #fff; }
+.b-color-1{ background-color: #fff; }
+.t-color-2{ color: #fff; }
+.b-color-2{ background-color: #fff; }
+.t-color-3{ color: #fff; }
+.b-color-3{ background-color: #fff; }
+.t-color-4{ color: #fff; }
+.b-color-4{ background-color: #fff; }
+.t-color-5{ color: #ffff; }
+.b-color-5{ background-color: #ffff; }
+.t-color-6{ color: #fff; }
+.b-color-6{ background-color: #fff; }
+
+
 .pice-map{
 	margin-bottom: 30px;
 }
@@ -35,11 +50,11 @@ body {
 }
 
 .pice-map .thumbnail p{
-	color: #999;
+	color: #fff;
 }
 .pice-map .thumbnail strong{
 	font-weight: 400;
-	color: #999; 
+	color: #fff; 
 	margin-bottom: 10px; 
 	display: block
 }
@@ -47,7 +62,7 @@ body {
 	margin-bottom: 2px; 
 	font-weight: 400; 
 	font-size: 20px;
-	color: #8ad2ce;
+	color: #fff;
 }
 .pice-map .thumbnail{
 	border-color: rgba(238, 238, 238, 0.5);
@@ -63,7 +78,7 @@ body {
 
 .other-address{
 	margin-top: 30px;
-	color: #999;
+	color: #fff;
 }
 .other-address .media-left .fa{
 	border: 1px solid #8ad2ce;
@@ -73,7 +88,10 @@ body {
 	text-align: center;
 	font-size: 20px;
 	border-radius: 50%; 
-	color: #8ad2ce;
+	color: #fff;
+}
+.pice-map .thumbnail p{
+	color: #fff;
 }
 </style>
 </head>
@@ -90,9 +108,13 @@ body {
 				<div class="row">
 					<div class="col-sm-6">
 						<h2 class="t-color-6">Get In Touch</h2>
-						<div class="heading-border b-color-6"></div>
-						<p>Lorem ipsum dolor sit amet, no mea aeterno indoctum percipitur. Homero quaerendum ius ei. In pro decore tamquam 									appetere, ea mentitum mediocrem efficiantur quo. Quo no assentior conclusionemque ceteros accusata.</p>
+						<div class="heading-border b-color-1"></div>
 						<ul class="media-list other-address">
+							<li class="media">
+								<div class="media-body">
+						<p>Lorem ipsum dolor sit amet, no mea aeterno indoctum percipitur. Homero quaerendum ius ei. In pro decore tamquam appetere, ea mentitum mediocrem efficiantur quo. Quo no assentior conclusionemque ceteros accusata.</p>
+								</div>
+							</li>
 							<li class="media">
 								<div class="media-left">
 									<i class="fa fa-map"></i>
@@ -133,7 +155,7 @@ body {
 					</div>
 					<div class="col-sm-6">
 						<h2 class="t-color-6">FeedBack</h2>
-						<div class="heading-border b-color-6"></div>
+						<div class="heading-border b-color-1"></div>
 						<div class="row form">
 							<div class="col-sm-6">
 								<div class="form-group">

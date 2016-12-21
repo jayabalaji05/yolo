@@ -165,18 +165,18 @@ body {
 	padding: 3rem 0;
 }
 
-.t-color-1{ color: #1ac4e2; }
-.b-color-1{ background-color: #1ac4e2; }
-.t-color-2{ color: #f8a01b; }
-.b-color-2{ background-color: #f8a01b; }
-.t-color-3{ color: #8ec63f; }
-.b-color-3{ background-color: #8ec63f; }
-.t-color-4{ color: #A672AA; }
-.b-color-4{ background-color: #A672AA; }
-.t-color-5{ color: #f14723; }
-.b-color-5{ background-color: #f14723; }
-.t-color-6{ color: #556273; }
-.b-color-6{ background-color: #556273; }
+.t-color-1{ color: #fff; }
+.b-color-1{ background-color: #fff; }
+.t-color-2{ color: #fff; }
+.b-color-2{ background-color: #fff; }
+.t-color-3{ color: #fff; }
+.b-color-3{ background-color: #fff; }
+.t-color-4{ color: #fff; }
+.b-color-4{ background-color: #fff; }
+.t-color-5{ color: #fff; }
+.b-color-5{ background-color: #fff; }
+.t-color-6{ color: #fff; }
+.b-color-6{ background-color: #fff; }
 
 
 .heading-border{
@@ -426,7 +426,7 @@ section.all-pro{
 
 #desktop .form-control{
 	width: 130px;
-	color: #ccc; 
+	color: #fff; 
 	margin: 0 5px;
 	background: #697687;
 	box-shadow: none;
@@ -658,7 +658,7 @@ section.all-pro{
 .media.desk-media h3{
 	border-bottom: none; 
 	margin-bottom: 0px; 
-	color: #556273;
+	color: #fff;
 }
 
 .media.desk-media .btn:hover {
@@ -707,7 +707,7 @@ section.all-pro{
 }
 
 .media.desk-media:hover h3{
-	color: #63b5b2;
+	color: #fff;
 }
 
 .media.desk-media:hover .thumb-overlay .fa{
@@ -892,7 +892,9 @@ section.all-pro{
 .best-selling .media-left{
 	padding-right: 20px;
 }
-
+.product-info .media:hover .media-body h3{
+	color: #fff;
+}
 .best-selling .media{
 	padding: 15px;
 	border: 1px solid rgba(238, 238, 238, 0.8);

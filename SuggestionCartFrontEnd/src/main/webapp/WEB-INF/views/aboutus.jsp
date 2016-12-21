@@ -49,24 +49,25 @@ section{
 	padding: 3rem 0;
 }
 
-.t-color-1{ color: #1ac4e2; }
-.b-color-1{ background-color: #1ac4e2; }
-.t-color-2{ color: #f8a01b; }
-.b-color-2{ background-color: #f8a01b; }
-.t-color-3{ color: #8ec63f; }
-.b-color-3{ background-color: #8ec63f; }
-.t-color-4{ color: #A672AA; }
-.b-color-4{ background-color: #A672AA; }
-.t-color-5{ color: #f14723; }
-.b-color-5{ background-color: #f14723; }
-.t-color-6{ color: #556273; }
-.b-color-6{ background-color: #556273; }
+.t-color-1{ color: #fff; }
+.b-color-1{ background-color: #fff;
+color:#fff; }
+.t-color-2{ color: #fff; }
+.b-color-2{ background-color: #fff; }
+.t-color-3{ color: #fff; }
+.b-color-3{ background-color: #fff; }
+.t-color-4{ color: #fff; }
+.b-color-4{ background-color: #fff; }
+.t-color-5{ color: #ffff; }
+.b-color-5{ background-color: #ffff; }
+.t-color-6{ color: #fff; }
+.b-color-6{ color: #fff; }
 
 
 .heading-border{
 	width: 50px;
 	height: 1px;
-	opacity: 0.5;
+	opacity: 0.9;
 	margin-bottom: 30px;
 }
 section.all-pro{
@@ -158,7 +159,7 @@ body {
 	border: 1px solid #8aaa63;
 	padding: 6px;
 	border-radius: 50%; 
-	color: #8aaa63; 
+	color: #fff; 
 	font-size: 11px;
 	margin-right: 10px
 }
@@ -167,12 +168,12 @@ body {
 	font-weight: 300; 
 	font-size: 13px;
 	margin-bottom: 10px;
-	color: #999;
+	color: #fff;
 }
 
 .description .pager li > a .fa{
 	padding-top: 5px;
-	color: #556273;
+	color: #fff;
 }
 
 .description .pager li > a:hover .fa{
@@ -180,7 +181,7 @@ body {
 }
 
 .description .pager li > a{
-	color: #999;
+	color: #fff;
 	background-color: #fff;
 	border: 1px solid rgba(238, 238, 238, 0.8);
 	border-radius: 3px;
@@ -206,25 +207,25 @@ body {
 
 .pro-details .rate-stock{
 	font-size: 12px; 
-	color: #556273;
+	color: #fff;
 	font-weight: 400;
 	border-bottom: 1px solid rgba(238, 238, 238, 0.8);
 	padding-bottom: 10px;
 }
 
 .pro-details .rate-stock li:last-child{
-	color: #8aaa63;
+	color: #fff;
 }
 
 .pro-details .rate-stock .fa{
 	font-size: 10px;
-	color: #fcc88e;
+	color: #fff;
 }
 
 .pro-details .wish-email{
 	font-size: 12px; 
 	font-weight: 400;
-	color: #999;
+	color: #fff;
 }
 
 .pro-details .wish-email .fa{
@@ -236,20 +237,20 @@ body {
 	font-size: 13px;
 	letter-spacing: 0.2px; 
 	margin-bottom: 15px;   
-	color: #888;
+	color: #fff;
 }
 
 .pro-details .currency span{
 	text-decoration: line-through; 
 	margin-left: 15px;
-	color: #ccc;
+	color: #fff;
 }
 
 .pro-details .currency{
 	font-weight: 600; 
 	font-size: 20px; 
 	margin-bottom: 10px; 
-	color: #1ac4e2;
+	color: #fff;
 }
 
 .pro-details .btn {
@@ -269,21 +270,21 @@ body {
 }
 
 p.tags a:hover{
-	color: #1ac4e2;
+	color: #fff;
 }
 
 p.tags a{
-	color: #ccc;
+	color: #fff;
 }
 
 p.tags{
 	font-size: 12px; 
 	font-weight: 400;
-	color: #556273;
+	color: #fff;
 }
 
 .p-d-social .fa:hover{
-	color: #8ad2ce;
+	color: #fff;
 	cursor: pointer;
 }
 
@@ -394,10 +395,12 @@ p.tags{
 					</div>
 					<div class="col-sm-5">
 						<h2 class="t-color-6" style="margin-top: 0;">Some Words About Us</h2>
-						<div class="heading-border b-color-6"></div>
+						<div class="heading-border b-color-1"></div>
+						<div class="b-color-6">
 						<p>Lorem ipsum dolor sit amet, no mea aeterno indoctum percipitur. Homero quaerendum ius ei. In pro decore tamquam 									appetere, ea mentitum mediocrem efficiantur quo. Quo no assentior conclusionemque. Qui cu ceteros accusata. Partem 									utamur explicari eos at. Ad brute veritus theophrastus vis, an quo mutat voluptaria mnesarchum.</p>
 						<p>Lorem ipsum dolor sit amet, no mea aeterno indoctum percipitur. Homero quaerendum ius ei. In pro decore tamquam 									appetere, ea mentitum mediocrem efficiantur quo. Quo no assentior conclusionemque. indoctum percipitur. Homero quaerendum ius ei. In pro decore tamquam appetere, ea mentitum mediocrem efficiantur quo. assentior conclusionemque.</p>
 						<p>Lorem ipsum dolor sit amet, no mea aeterno indoctum percipitur. Homero quaerendum ius ei. In pro decore tamquam 									appetere, ea mentitum mediocrem efficiantur brute veritus theophrastus vis.</p>
+					</div>
 					</div>
 				</div>
 			</div>
@@ -409,8 +412,10 @@ p.tags{
 				<div class="row">
 					<div class="col-sm-8">
 						<h2 class="t-color-6">Features E-Market</h2>
-						<div class="heading-border b-color-6"></div>
+						<div class="heading-border b-color-1"></div>
+						<div class="b-color-6">
 						<p>Lorem ipsum dolor sit amet, no mea aeterno indoctum percipitur. Homero quaerendum ius ei. In pro decore tamquam 									appetere, ea mentitum mediocrem efficiantur quo. Quo no assentior conclusionemque. Qui cu ceteros accusata. Partem 									utamur explicari eos at. Ad brute veritus theophrastus vis, an quo mutat voluptaria mnesarchum.</p>
+						</div>
 						<ul class="list-ver">
 							<li><i class="fa fa-check"></i>Mentitum mediocrem efficiantur quo</li>
 							<li><i class="fa fa-check"></i>Lorem ipsum dolor sit amet, no mea aeterno indoctum</li>
@@ -422,7 +427,7 @@ p.tags{
 					</div>
 					<div class="col-sm-4">
 						<h2 class="t-color-6">Why Our Shop</h2>
-						<div class="heading-border b-color-6"></div>
+						<div class="heading-border b-color-1"></div>
 						
 						<div class="panel-group ques-ask" id="accordion" role="tablist" aria-multiselectable="true">
 							<div class="panel panel-default">

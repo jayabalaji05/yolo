@@ -1010,7 +1010,7 @@ body {
 										<div class="item active">
 											<a href="mobile_phones"><img
 												src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\iphone-7-plus-silver.jpg"
-												class="img-responsive" alt="product 1" style="width:800px;height:200px"></a>
+												class="img-responsive" alt="product 1" style="width:900px;height:200px"></a>
 											<h4>
 												<small><center>Latest Apple iphone 7</center></small>
 											</h4>
@@ -1020,7 +1020,7 @@ body {
 										<div class="item">
 											<a href="#"><img
 												src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\600_006_Galaxy_S7_bk_Left_Angle.png"
-												class="img-responsive" alt="product 2" style="width:800px;height:200px"></a>
+												class="img-responsive" alt="product 2" style="width:900px;height:200px"></a>
 											<h4>
 												<small><center>New Samsung Galaxy S7 Edge</center></small>
 											</h4>
@@ -1030,7 +1030,7 @@ body {
 										<div class="item">
 											<a href=""><img
 												src="C:\Users\JB\workspace\shoppingFrontEnd\src\main\resources\images\moto-z-motorola-lenovo-2-official.jpg"
-												class="img-responsive" alt="product 3" style="width:800px;height:200px"></a>
+												class="img-responsive" alt="product 3" style="width:900px;height:200px"></a>
 											<h4>
 												<small><center>Latest Tech in Moto Z</center></small>
 											</h4>
@@ -1089,7 +1089,7 @@ body {
 										<div class="item active">
 											<a href="mobile_phones"><img
 												src="https://images-na.ssl-images-amazon.com/images/I/71Gni5tDf9L._SL1500_.jpg"
-												class="img-responsive" alt="product 1" style="width:800px;height:200px"></a>
+												class="img-responsive" alt="product 1" style="width:950px;height:200px"></a>
 											<h4>
 												<small><center>Latest Sony 4K Television</center></small>
 											</h4>
@@ -1098,7 +1098,7 @@ body {
 										<div class="item">
 											<a href="#"><img
 												src="http://www.samsung.com/uk/discover/multimedia/article_images/ces-hero-image-v1%202.jpg"
-												class="img-responsive" alt="product 2" style="width:800px;height:200px"></a>
+												class="img-responsive" alt="product 2" style="width:950px;height:200px"></a>
 											<h4>
 												<small><center>New Samsung Ultra HD Television</center></small>
 											</h4>
@@ -1108,7 +1108,7 @@ body {
 										<div class="item">
 											<a href=""><img
 												src="http://image3.mouthshut.com/images/imagesp/925748105s.jpg"
-												class="img-responsive" alt="product 3" style="width:800px;height:200px"></a>
+												class="img-responsive" alt="product 3" style="width:950px;height:200px"></a>
 											<h4>
 												<small><center>Latest 4k VU Television</center></small>
 											</h4>
@@ -1139,57 +1139,57 @@ body {
 						</li>
 						<li class="col-sm-3">
 							<ul>
-								<li class="dropdown-header">Mobile Accessories</li>
-								<li><a href="#">Headsets & Headphones</a></li>
-								<li><a href="#">Powerbanks</a></li>
-								<li><a href="#">Mobile Cases</a></li>
-								<li><a href="#">Screengaurds</a></li>
+								<li class="dropdown-header">Kitchen Appliances</li>
+								<li><a href="#">Microwave Ovens</a></li>
+								<li><a href="#">Juicer</a></li>
+								<li><a href="#">Water Purifiers</a></li>
+								<li><a href="#">Coffee Makers</a></li>
 							</ul>
 						</li>
 						<li class="col-sm-3">
 							<ul>
-								<li class="dropdown-header">Wearables</li>
-								<li><a href="#">Smart Watches</a></li>
-								<li><a href="#">Smart Bands</a></li>
-								<li><a href="#">Smart Glasses(VR)</a></li>
+								<li class="dropdown-header">Washing Machine</li>
+								<li><a href="#">Fully Automatic Front Load</a></li>
+								<li><a href="#">Semi Automatic Top Load</a></li>
+								<li><a href="#">Fully Automatic Top Load</a></li>
 							</ul>
 						</li>
 					</ul></li>
 				<li class="dropdown mega-dropdown"><a href="#"
-					class="dropdown-toggle" data-toggle="dropdown">Books & More<span
+					class="dropdown-toggle" data-toggle="dropdown">Sports & More<span
 						class="caret"></span></a>
 					<ul class="dropdown-menu mega-dropdown-menu">
 						<li class="col-sm-3">
 							<ul>
-								<li class="dropdown-header">Books & More</li>
+								<li class="dropdown-header">Sports & More</li>
 								<div id="menCollection" class="carousel slide" data-ride="carousel">
 									<div class="carousel-inner">
 										<div class="item active">
 											<a href=""><img
-												src="https://universecityblog.files.wordpress.com/2011/06/harry-potter-books-full-set.jpg"
-												class="img-responsive" alt="product 1" style="width:800px;height:200px"></a>
+												src="http://www.sonyinsider.com/wp-content/uploads/2010/10/ofy2wz.png"
+												class="img-responsive" alt="product 1" style="width:900px;height:200px"></a>
 											<h4>
-												<small><center>All Harry Potter Collections</center></small>
+												<small><center>All new PS3</center></small>
 											</h4>
 											
 										</div>
 										<!-- End Item -->
 										<div class="item">
 											<a href="#"><img
-												src="http://media.theworks.co.uk/images/10009227_Z.jpg"
-												class="img-responsive" alt="product 2" style="width:800px;height:200px"></a>
+												src="https://media.playstation.com/is/image/SCEA/playstation-4-slim-vertical-product-shot-01-us-07sep16?$TwoColumn_Image$"
+												class="img-responsive" alt="product 2" style="width:900px;height:200px"></a>
 											<h4>
-												<small><center>All New Dan Brown Collections</center></small>
+												<small><center>Upgraded PS4</center></small>
 											</h4>
 											
 										</div>
 										<!-- End Item -->
 										<div class="item">
 											<a href=""><img
-												src="http://www.chetanbhagat.com/wp-content/uploads/cover_highres_2states.jpg"
-												class="img-responsive" alt="product 3" style="width:800px;height:200px"></a>
+												src="https://s3.euronics.ee/UserFiles/Products/Images/86379_xbox-360-4gb-e-console-xbox-360-15250854-5.png"
+												class="img-responsive" alt="product 3" style="width:900px;height:200px"></a>
 											<h4>
-												<small><center>New Chetan bhagat Collections</center></small>
+												<small><center>Microsoft Xbox 360</center></small>
 											</h4>
 											
 										</div>
@@ -1207,30 +1207,30 @@ body {
 						</li>
 						<li class="col-sm-3">
 							<ul>
-								<li class="dropdown-header">Mobile Phones</li>
-								<li><a href="Books&More">Apple</a></li>
-								<li><a href="Books&More">Samsung</a></li>
-								<li><a href="Books&More">Motorola</a></li>
-								<li><a href="Books&More">Lenovo</a></li>
+								<li class="dropdown-header">Sports</li>
+								<li><a href="Books&More">Cricket</a></li>
+								<li><a href="Books&More">Badminton</a></li>
+								<li><a href="Books&More">Tennis</a></li>
+								<li><a href="Books&More">Table Tennis</a></li>
 								<li class="divider"></li>
 							
 							</ul>
 						</li>
 						<li class="col-sm-3">
 							<ul>
-								<li class="dropdown-header">Mobile Accessories</li>
-								<li><a href="#">Headsets & Headphones</a></li>
-								<li><a href="#">Powerbanks</a></li>
-								<li><a href="#">Mobile Cases</a></li>
-								<li><a href="#">Screengaurds</a></li>
+								<li class="dropdown-header">Fitness Accessories</li>
+								<li><a href="#">Gloves</a></li>
+								<li><a href="#">AB Exercisers</a></li>
+								<li><a href="#">Yoga Mats</a></li>
+								<li><a href="#">Dumbbells</a></li>
 							</ul>
 						</li>
 						<li class="col-sm-3">
 							<ul>
-								<li class="dropdown-header">Wearables</li>
-								<li><a href="#">Smart Watches</a></li>
-								<li><a href="#">Smart Bands</a></li>
-								<li><a href="#">Smart Glasses(VR)</a></li>
+								<li class="dropdown-header">Gaming</li>
+								<li><a href="#">PS3</a></li>
+								<li><a href="#">PS4</a></li>
+								<li><a href="#">Xbox 360</a></li>
 							</ul>
 						</li>
 					</ul></li>

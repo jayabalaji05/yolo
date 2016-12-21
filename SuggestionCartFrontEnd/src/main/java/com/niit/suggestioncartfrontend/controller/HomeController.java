@@ -111,4 +111,9 @@ import org.springframework.stereotype.Controller;
 		{
 			return "contactus";
 		}
+		@RequestMapping("/admin")
+		public String admin()
+		{
+			return "admin";
+		}
 	}
