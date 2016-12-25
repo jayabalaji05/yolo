@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.niit.suggestioncartbackend.dao.CategoryDAO;
 import com.niit.suggestioncartbackend.model.Category;
@@ -31,9 +32,9 @@ public class CategoryController {
 	}
 	
 	@RequestMapping(value= "/category/add", method = RequestMethod.POST)
-	public String addCategory(@Valid @ModelAttribute("category") Category category,BindingResult result,HttpServletRequest request)
+	public String addCategory(@RequestParam("id") int id,@Valid @ModelAttribute("category") Category category,BindingResult result,HttpServletRequest request)
 	{
-			if (category.getId() == 0) {
+			if (category.getId() == id) {
 				categoryDAO.addCategory(category);
 			} else {
 				categoryDAO.updateCategory(category);

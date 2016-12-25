@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.niit.suggestioncartbackend.dao.ProductDAO;
 import com.niit.suggestioncartbackend.model.Product;
@@ -36,7 +37,7 @@ public class ProductController {
 	}
 	
 	@RequestMapping(value= "/product/add", method = RequestMethod.POST)
-	public String addProduct(@Valid @ModelAttribute("product") Product product,BindingResult result,HttpServletRequest request)
+	public String addProduct(@Valid @ModelAttribute("product") Product product,BindingResult result,HttpServletRequest request,@RequestParam("id") int id)
 	{
 		
 		String filename = null;
@@ -66,7 +67,7 @@ public class ProductController {
 			return "addproduct";
 		}
 		else{
-			if (product.getId() == 0) {
+			if (product.getId() == id) {
 				productDAO.addProduct(product);
 			} else {
 				productDAO.updateProduct(product);

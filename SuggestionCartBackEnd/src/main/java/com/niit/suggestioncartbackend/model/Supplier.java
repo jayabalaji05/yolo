@@ -2,7 +2,7 @@ package com.niit.suggestioncartbackend.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
+//import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.Size;
@@ -12,7 +12,7 @@ import javax.validation.constraints.Size;
 public class Supplier {
 
 	@Id
-	@GeneratedValue
+	@Column
 	private int id;
 	
 	@Column

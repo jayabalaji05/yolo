@@ -15,7 +15,9 @@ import org.springframework.orm.hibernate5.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import com.niit.suggestioncartbackend.model.Category;
+import com.niit.suggestioncartbackend.model.Login;
 import com.niit.suggestioncartbackend.model.Product;
+import com.niit.suggestioncartbackend.model.Register;
 import com.niit.suggestioncartbackend.model.Supplier;
 
 @Configuration
@@ -28,7 +30,7 @@ public class ApplicationContextConfig {
 
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 			
-		dataSource.setUrl("jdbc:h2:tcp://localhost/~/NIITDB");
+		dataSource.setUrl("jdbc:h2:tcp://localhost/~/niitdb;lock_timeout=30000");
 
 		dataSource.setDriverClassName("org.h2.Driver");
 
@@ -55,6 +57,8 @@ public class ApplicationContextConfig {
 		sessionBuilder.addAnnotatedClass(Category.class);
 		sessionBuilder.addAnnotatedClass(Product.class);
 		sessionBuilder.addAnnotatedClass(Supplier.class);
+		sessionBuilder.addAnnotatedClass(Register.class);
+		sessionBuilder.addAnnotatedClass(Login.class);
 		
 			return sessionBuilder.buildSessionFactory();
 	}

@@ -330,7 +330,7 @@ section{
 									<div class="thumbnail">
 										<!--span class="e-label"><div>Sale</div></span-->
 										<span class="service-link text-center">
-											<img class="img-responsive" src="images/f-pro-1.jpg" alt="">
+											<img class="img-responsive" src="C:\Users\JB\workspace\SuggestionCartFrontEnd\src\main\resources\images\moto-z-droid-1000-BHlxH8Uhiw.png" alt="" style="height:200px;width:200px">
 											<div class="list-inline">
 												<a href=""><i class="fa fa-eye"></i></a>
 												<a href=""><i class="fa fa-link"></i></a>

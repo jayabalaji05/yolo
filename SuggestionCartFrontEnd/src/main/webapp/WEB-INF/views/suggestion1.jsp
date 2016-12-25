@@ -779,15 +779,15 @@ section.all-pro{
 .category{
 	font-size: 15px; 
 	text-transform: capitalize; 
-	color: #999;
+	color: #fff;
 }
 .category .fa{
-	color: #fcc686;
+	color: #fff;
 	font-size: 11px;
 }
 
 .featured-product .thumbnail h3 {
-	color: #697687;
+	color: #fff;
 	font-size: 17px;
 	font-weight: 300;
 	margin-top: 8px;
@@ -810,12 +810,12 @@ section.all-pro{
 }
 
 .featured-product .thumbnail span{
-	color: #aaa; 
+	color: #fff; 
 	line-height: 4; 
 	font-size: 12px;
 }
 .featured-product .thumbnail strong{
-	color: #1ac4e2;
+	color: #fff;
 	font-weight: 600; 
 	font-size: 22px;
 }
@@ -825,10 +825,10 @@ section.all-pro{
 }
 
 .featured-product .thumbnail:hover span{
-	color: #F14723;
+	color: #fff;
 }
 .featured-product .thumbnail:hover h3{
-	color: #8ad2ce;
+	color: #fff;
 }
 
 .featured-product .thumbnail .btn:hover{
@@ -895,6 +895,9 @@ section.all-pro{
 .product-info .media:hover .media-body h3{
 	color: #fff;
 }
+.media-body p{
+	color: #fff;
+}
 .best-selling .media{
 	padding: 15px;
 	border: 1px solid rgba(238, 238, 238, 0.8);
@@ -958,7 +961,7 @@ section.all-pro{
 								<div class="heading-border b-color-6"></div>
 								<ul class="media-list">
 									<li class="media">
-										<div class="media-left"><img src="images/featured-1.jpg" alt=""></div>
+										<div class="media-left"><img src="C:\Users\JB\workspace\SuggestionCartFrontEnd\src\main\resources\images\moto-z-droid-1000-BHlxH8Uhiw.png" alt=""></div>
 										<div class="media-body">
 											<p class="media-heading">Lorem ipsum dolor</p>
 											<div class="category">
@@ -1057,7 +1060,7 @@ section.all-pro{
 													<a class="btn btn-default" href="#">Buy Now</a>
 												</div>
 												<div class="col-sm-4">
-													<img class="img-responsive" src="images/desk-slide.png" alt="" />
+													<img class="img-responsive" src="C:\Users\JB\workspace\SuggestionCartFrontEnd\src\main\resources\images\moto-z-droid-1000-BHlxH8Uhiw.png" alt="" style="width:200px;height:200px"/>
 												</div>
 											</div>
 										</div>
@@ -1101,7 +1104,7 @@ section.all-pro{
 									<div class="col-sm-12">
 										<div class="media desk-media">
 											<div class="media-left">
-												<img src="images/e-add-1.jpg" alt="">
+												<img src="C:\Users\JB\workspace\SuggestionCartFrontEnd\src\main\resources\images\moto-z-droid-1000-BHlxH8Uhiw.png" alt="" style="width:200px;height:200px">
 												<div class="thumb-overlay text-center"><i class="fa fa-eye"></i></div>
 											</div>
 											<div class="media-body">

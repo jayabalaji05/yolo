@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.niit.suggestioncartbackend.dao.SupplierDAO;
 import com.niit.suggestioncartbackend.model.Supplier;
@@ -32,9 +33,9 @@ public class SupplierController {
 	}
 	
 	@RequestMapping(value= "/supplier/add", method = RequestMethod.POST)
-	public String addSupplier(@Valid @ModelAttribute("supplier") Supplier supplier,BindingResult result,HttpServletRequest request)
+	public String addSupplier(@RequestParam("id") int id,@Valid @ModelAttribute("supplier") Supplier supplier,BindingResult result,HttpServletRequest request)
 	{
-			if (supplier.getId() == 0) {
+			if (supplier.getId() == id) {
 				supplierDAO.addSupplier(supplier);
 			} else {
 				supplierDAO.updateSupplier(supplier);

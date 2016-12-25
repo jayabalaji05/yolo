@@ -2,7 +2,7 @@ package com.niit.suggestioncartbackend.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
+//import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Transient;
@@ -15,7 +15,7 @@ import org.springframework.web.multipart.MultipartFile;
 public class Product {
 
 	@Id
-	@GeneratedValue
+	@Column
 	private int id;
 	
 	@Column

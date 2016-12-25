@@ -155,11 +155,6 @@ body {
 #login-modal .modal-dialog {
 	width: 350px;
 }
-
-#login-modal input[type=text], input[type=password] {
-	margin-top: 10px;
-}
-
 #div-login-msg, #div-lost-msg, #div-register-msg {
 	border: 1px solid #dadfe1;
 	height: 30px;

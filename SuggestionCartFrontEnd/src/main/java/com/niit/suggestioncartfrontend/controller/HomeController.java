@@ -51,17 +51,6 @@ import org.springframework.stereotype.Controller;
 			return "index";
 		}
 		
-		@RequestMapping("/login")
-		public String login( Model model)
-		{
-		model.addAttribute("userClickedLogin","true");	
-		return "login";
-		}
-		@RequestMapping("/registration")
-		public String registeration()
-		{
-			return "registration";
-		}
 		@RequestMapping("/mobile_phones")
 		public String products()
 		{

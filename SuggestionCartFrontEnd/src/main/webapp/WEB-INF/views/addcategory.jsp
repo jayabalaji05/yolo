@@ -14,7 +14,6 @@
 	</style>
 </head>
 <body>
-<jsp:include page="admin.jsp"></jsp:include>
 <h1>
 	Add a Category
 </h1>
@@ -28,7 +27,6 @@
 
 
 <table>
-	<c:if test="${!empty category.name}">
 	<tr>
 		<td>
 			<form:label path="id">
@@ -36,11 +34,10 @@
 			</form:label>
 		</td>
 		<td>
-			<form:input path="id" readonly="true" size="8"  disabled="true" />
-			<form:hidden path="id" />
+			<form:input path="id" />
+			<form:errors path="id"></form:errors>
 		</td> 
 	</tr>
-	</c:if>
 	<tr>
 		<td>
 			<form:label path="name">

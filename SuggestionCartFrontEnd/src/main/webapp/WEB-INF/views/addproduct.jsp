@@ -14,8 +14,6 @@
 	</style>
 </head>
 <body>
-
-<jsp:include page="admin.jsp"></jsp:include>
 <h1>
 	Add a Product
 </h1>
@@ -29,7 +27,6 @@
 
 
 <table>
-	<c:if test="${!empty product.name}">
 	<tr>
 		<td>
 			<form:label path="id">
@@ -37,11 +34,10 @@
 			</form:label>
 		</td>
 		<td>
-			<form:input path="id" readonly="true" size="8"  disabled="true" />
-			<form:hidden path="id" />
+			<form:input path="id"  />
+			<form:errors path="id" />
 		</td> 
 	</tr>
-	</c:if>
 	<tr>
 		<td>
 			<form:label path="name">
